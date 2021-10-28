@@ -1,7 +1,0 @@
-C:\Users\Valibayli\source\repos\TeacherAdder\TeacherAdder\bin\Debug\TeacherAdder.exe.config
-C:\Users\Valibayli\source\repos\TeacherAdder\TeacherAdder\bin\Debug\TeacherAdder.exe
-C:\Users\Valibayli\source\repos\TeacherAdder\TeacherAdder\bin\Debug\TeacherAdder.pdb
-C:\Users\Valibayli\source\repos\TeacherAdder\TeacherAdder\obj\Debug\TeacherAdder.csproj.AssemblyReference.cache
-C:\Users\Valibayli\source\repos\TeacherAdder\TeacherAdder\obj\Debug\TeacherAdder.csproj.CoreCompileInputs.cache
-C:\Users\Valibayli\source\repos\TeacherAdder\TeacherAdder\obj\Debug\TeacherAdder.exe
-C:\Users\Valibayli\source\repos\TeacherAdder\TeacherAdder\obj\Debug\TeacherAdder.pdb
