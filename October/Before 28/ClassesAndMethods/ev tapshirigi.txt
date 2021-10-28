@@ -1,0 +1,2 @@
+1. Access modifiers arashdirmaq
+2. Method return types ve void method nedir arasdirmaq
