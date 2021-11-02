@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bookstore
+namespace BookStore.Interfaces
 {
-    public enum CoverType
+    interface Ibook
     {
-        Plastic = 1,
-        Cardboard = 2,
-        Leather = 3,
-        Cloth = 4
+
     }
 }

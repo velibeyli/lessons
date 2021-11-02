@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{65AC3418-0BE8-48EB-B7FA-5FA787D43092}</ProjectGuid>
+    <ProjectGuid>{34395960-5C7F-4EF2-B8AE-6A57466577E7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Bookstore</RootNamespace>
-    <AssemblyName>Bookstore</AssemblyName>
+    <RootNamespace>BookStore</RootNamespace>
+    <AssemblyName>BookStore</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,10 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Beginning.cs" />
-    <Compile Include="BookList.cs" />
-    <Compile Include="CoverType.cs" />
-    <Compile Include="NewBook.cs" />
+    <Compile Include="Book.cs" />
+    <Compile Include="BookStoreLogic.cs" />
+    <Compile Include="BookStoreEnums.cs" />
+    <Compile Include="Interfaces\Ibook.cs" />
+    <Compile Include="Interfaces\IBookStoreLogic.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
