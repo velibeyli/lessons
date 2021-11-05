@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LinqQuery
+﻿namespace LinqQuery
 {
     public class Group
     {
         public int Id { get; set; }
-        public int Name { get; set; }
-        public int BranchId { get; set; }
+        public string Name { get; set; }
+        public Branch Branch { get; set; }
+        public Teacher Teacher { get; set; }
     }
 }
