@@ -209,13 +209,15 @@ namespace LinqQuery
             var exceptStudentsresult = students.Except(exceptStudents)
                 .Select(s => s.Name);
 
-            var anonymousTypeClass = students.Select(m => new
-            {
-                m.Name,
-                m.Surname
-            });
+            Console.WriteLine(exceptStudentsresult);
 
-            Console.WriteLine(anonymousTypeClass.FirstOrDefault().Name)
+            //var anonymousTypeClass = students.Select(m => new
+            //{
+            //    m.Name,
+            //    m.Surname
+            //});
+
+            //Console.WriteLine(anonymousTypeClass.FirstOrDefault().Name)
 
 
             //Console.WriteLine("Student count: " + newList.Count);
@@ -349,7 +351,82 @@ namespace LinqQuery
             //Console.WriteLine(maxNumber);
             //Console.WriteLine(minNumber);
             //Console.WriteLine(sumNumber);
+            #region Contains method
+            var studentList = students;
+            var str = "Hellow world";
+            bool res = str.Contains("ll");
+
+            var contains1 = students.Where(s => s.Name.ToLower().Contains("ru"));
+
+            List<string> classN = new List<string>()
+            {
+                "Murad",
+                "Natiq",
+                "Ceyhun",
+                "Seymur",
+                "Orxan",
+                "Hesen"
+            };
+
+            var contains2 = classN.Contains("Elsen");
+            var st2 = students[2];
+            var contains3 = students.Contains(st2);
+            #endregion
+
+            #region Average method
+            var pointAverage = students.Average(m => m.Point);
+            List<int> av = new List<int> { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            var xAv = av.Average();
+            #endregion
+
+
+            #region Sequence Equal
+            List<string> sequenceList1 = new List<string>()
+            {
+                "alma",
+                "armud",
+                "qarpiz",
+                "ciyelek",
+                "nar"
+            };
+
+            List<string> sequenceList2 = new List<string>()
+            {
+                "alma",
+                "armud",
+                "qarpiz",
+                "ciyelek",
+                "nar"
+            };
+
+            var seqEqualResult = sequenceList1.SequenceEqual(sequenceList2);
+            #endregion
+
+            #region Distinct
+            List<string> distinctList = new List<string>()
+            {
+                "alma",
+                "armud",
+                "armud1",
+                "qarpiz",
+                "ciyelek",
+                "armud",
+                "ciyelek",
+                "nar"
+            };
+            var disResult = distinctList.Distinct();
+            var studentsDistinctResult = students.Distinct();
+            #endregion
+
+            #region Any and All
+            var anyRuslan = students.Any(m => m.Name.ToLower() == "ruslan");
+            var allRuslan = students.All(m => m.Name.ToLower() == "ruslan");
+            var allNameExample = students.All(m => m.Name.Length > 2);
+            var allAgeExample = students.All(m=>m.DateOfBirth > new DateTime(1970, 12, 12));
+            #endregion
+
             Console.ReadLine();
+
         }
     }
 }
