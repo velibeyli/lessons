@@ -10,6 +10,12 @@ namespace LinqExercises
     {
         static void Main(string[] args)
         {
+            string NameShortener(string name, string surname)
+            {
+                if ((name + surname).Length > 14)
+                    return name[0] + ".";
+                return name;
+            }
             List<Student> students = new List<Student>()
             {
                 new Student(1, "Ruslan", "Valibayli", "ruslna.velibeyli@mail.ru", 0505050505, new DateTime(1991,12,12), 78.5),
@@ -24,6 +30,9 @@ namespace LinqExercises
 
             #region tapsiriq 1
             students.ForEach(m => Console.WriteLine("Student name and surname: {0} {1}",m.Name,m.Surname));
+            students.ForEach(m => Console.WriteLine("Student name and surname: {0} {1}", NameShortener(m.Name, m.Surname), m.Surname));
+
+            
 
             Console.WriteLine("-------------------------------------");
 
@@ -32,6 +41,10 @@ namespace LinqExercises
             foreach (var item in nameSurname)
             {
                 if (item.Length > 15)
+                    //"Ruslan".First();
+                    //["R", "u", "s", "l", "a", "n"]
+                    //"Ruslan Valibayli".split(' ').Last()
+                    //["Ruslan", "Valibayli"]
                     Console.WriteLine(item.First() + "." + item.Split(' ').Last());
                 else
                     Console.WriteLine(item);
