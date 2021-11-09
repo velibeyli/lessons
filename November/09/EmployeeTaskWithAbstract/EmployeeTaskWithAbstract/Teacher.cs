@@ -8,25 +8,20 @@ namespace EmployeeTaskWithAbstract
 {
     public class Teacher :BaseEmployee
     {
-        private int id;
-        private string name;
-        private string surname;
-        public override int Id
+        public string UniversityName { get; set; }
+        public override int Practice
         {
-            get { return id; }
-            set { id = value; }
-        }
-
-        public override string Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
-
-        public override string Surname
-        {
-            get { return surname; }
-            set { surname = value; }
+            get { return Practice; }
+            set {
+                if (Practice > 1 && Practice <= 3)
+                    Salary = 600;
+                else if (Practice > 3 && Practice <= 6)
+                    Salary = 850;
+                else if (Practice > 6 && Practice <= 10)
+                    Salary = 1200;
+                else if (Practice > 10)
+                    Salary = 1500;
+            }
         }
         public override string Work()
         {

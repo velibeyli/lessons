@@ -8,9 +8,11 @@ namespace EmployeeTaskWithAbstract
 {
     public abstract class BaseEmployee
     {
-        public abstract int Id { get; set; }
-        public abstract string Name { get; set; }
-        public abstract string Surname { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Surname { get; set; }
+        public int Salary { get; set; }
+        public abstract int Practice { get; set; }
 
         public abstract string Work();
     }

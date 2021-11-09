@@ -8,23 +8,21 @@ namespace EmployeeTaskWithAbstract
 {
     public class Developer :BaseEmployee
     {
-        private int id;
-        private string name;
-        private string surname;
-        public override int Id { 
-            get { return id; }
-            set { id = value; }
-        }
-
-        public override string Name {
-            get { return name; }
-            set { name = value; }
-        }
-
-        public override string Surname
+        public string ComputerModel { get; set; }
+        public override int Practice
         {
-            get { return surname; }
-            set { surname = value; }
+            get { return Practice; }
+            set
+            {
+                if (Practice > 1 && Practice <= 4)
+                    Salary = 1000;
+                else if (Practice > 4 && Practice <= 7)
+                    Salary = 2500;
+                else if (Practice > 7 && Practice <= 12)
+                    Salary = 3700;
+                else if (Practice > 12)
+                    Salary = 4600;
+            }
         }
         public override string Work() {
             return "Developers writes code.";

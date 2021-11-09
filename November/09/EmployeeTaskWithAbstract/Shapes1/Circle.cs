@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace Shapes
 {
-    public class Square : Shape
+    public class Circle : Shape
     {
-        private int side;
-        public Square(int side, string id) : base(id)
+        private int radius;
+        public Circle(int radius, string id) : base(id)
         {
-            this.side = side;
+            this.radius = radius;
         }
 
         public override double Area
         {
             get
             {
-                return side * side;
+                return radius * radius * Math.PI;
             }
         }
     }
