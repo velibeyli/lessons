@@ -12,11 +12,16 @@ namespace EmployeeTaskWithAbstract
     {
         static void Main(string[] args)
         {
+            var a = 5;
+
+            const int youCantChangeMyValueInRunTime = a;
+
             Teacher teacher = new Teacher();
             teacher.Id = 1;
             teacher.Name = "Sabir";
             teacher.Surname = "Aliyev";
             teacher.UniversityName = "Qafqaz University";
+            teacher.Practice = 2;
             teacher.Work();
 
             Police police = new Police();
@@ -24,6 +29,7 @@ namespace EmployeeTaskWithAbstract
             police.Name = "Mammad";
             police.Surname = "Mammadov";
             police.GunModel = "Ak-45";
+            police.Practice = 5;
             police.Work();
 
             Doctor doctor = new Doctor();
@@ -31,6 +37,7 @@ namespace EmployeeTaskWithAbstract
             doctor.Name = "Etibar";
             doctor.Surname = "Huseynov";
             doctor.HospitalName = "Guven klinikasi";
+            doctor.Practice = 7;
             doctor.Work();
 
             Developer developer = new Developer();
@@ -38,6 +45,7 @@ namespace EmployeeTaskWithAbstract
             developer.Name = "Orxan";
             developer.Surname = "Farajov";
             developer.ComputerModel = "Dell";
+            developer.Practice = 4;
             developer.Work();
 
             //Square square = new Square(20, "dortbucaq");
@@ -52,6 +60,13 @@ namespace EmployeeTaskWithAbstract
             //Dog dogs = new Dog();
             //dogs.AnimalSound();
             //dogs.Sleep();
+
+            var aaaa = teacher.MyReadOnlyProperty;
+            //teacher.MyReadOnlyProperty = 80; //wrong code
+            //youCantChangeMyValueInRunTime = 5; //wrong code
+
+            var ttt = youCantChangeMyValueInRunTime; //right code
+
 
             Console.ReadLine();
         }
