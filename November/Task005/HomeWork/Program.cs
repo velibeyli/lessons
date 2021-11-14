@@ -12,9 +12,9 @@ namespace HomeWork
         {
             Honda newCar = new Honda();
             newCar.Brand = "Honda";
+            newCar.Body = BodyType.Sedan;
             newCar.Wheel = 4;
             newCar.Door = 5;
-            newCar.Body = BodyType.Sedan;
             newCar.Color = "white";
             newCar.Model = "CR-V";
             newCar.TransmissionBox = Transmission.Automatic;
@@ -29,9 +29,9 @@ namespace HomeWork
 
             Mercedes newCar2 = new Mercedes();
             newCar2.Brand = "Mercedes";
-            newCar2.Wheel = 4;
-            newCar2.Door = 4;
             newCar2.Body = BodyType.Sedan;
+            newCar2.Wheel = 4;
+            newCar2.Door = 5;            
             newCar2.Color = "Grey";
             newCar2.Model = "C-Class";
             newCar2.TransmissionBox = Transmission.Manual;
@@ -46,9 +46,9 @@ namespace HomeWork
 
             Tesla newCar3 = new Tesla();
             newCar3.Brand = "Tesla";
-            newCar3.Wheel = 4;
-            newCar3.Door = 3;
             newCar3.Body = BodyType.Coupe;
+            newCar3.Wheel = 4;
+            newCar3.Door = 4;            
             newCar3.Color = "Grey";
             newCar3.Model = "Model 3";
             newCar3.TransmissionBox = Transmission.Automatic;
