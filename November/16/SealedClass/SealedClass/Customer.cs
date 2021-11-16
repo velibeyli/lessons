@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PartialClass2
+namespace SealedClass
 {
-    public class User :  BaseClass, IUser, IBaseClass
+    public class Customer
     {
-        public int Age { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
         public string Surname { get; set; }
+        public int CustomerNumber { get; set; }
     }
 }
