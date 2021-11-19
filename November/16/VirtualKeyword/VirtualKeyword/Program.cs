@@ -52,15 +52,12 @@ namespace VirtualKeyword
             //Task 2:
 
             A helloFromB = new B();
-            helloFromB.Common = "Salam Ruslan (B)";
             helloFromB.Hello();
 
             A helloFromC = new C();
-            helloFromC.Common = "Salam Ruslan (C)";
             helloFromC.Hello();
 
             A helloFromD = new D();
-            helloFromD.Common = "Salam Ruslan (D)";
             helloFromD.Hello();
 
 
