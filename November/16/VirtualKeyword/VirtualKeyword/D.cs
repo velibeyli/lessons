@@ -20,5 +20,10 @@ namespace VirtualKeyword
         {
             Console.WriteLine("ZMethod in D class");
         }
+        public override void Hello()
+        {
+            Common = "Salam Ruslan (D)";
+            Console.WriteLine(Common);
+        }
     }
 }

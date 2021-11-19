@@ -21,13 +21,18 @@ namespace SealedClass
             Console.WriteLine("Card number: " + CardNumber);
             Console.WriteLine("Card holder name: " + HolderName);
         }
-        protected sealed virtual int? GetCvvCode(int pin)
+        protected virtual int? GetCvvCode(int pin)
         {
             return Pin;
         }
         public double ShowBalance()
         {
             return Balance;
+        }
+        public virtual double GetCash(int amount)
+        {
+            double restOfAmount = Balance - amount;
+            return restOfAmount;
         }
     }
 }

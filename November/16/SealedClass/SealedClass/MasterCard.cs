@@ -23,5 +23,14 @@ namespace SealedClass
 
             return null;
         }
+        public override double GetCash(int amount)
+        {
+            Console.WriteLine("Cixarilan mebleg: " + amount + " AZN");            
+            double restOfAmount = Balance - amount;
+            double percentAmount = restOfAmount - (amount * 0.03);
+            Console.WriteLine("Kartdaki qaliq mebleg: " + percentAmount + " AZN");
+            Console.WriteLine("Faiz tutulan mebleg: " + amount*0.03 + " AZN");
+            return percentAmount;
+        }
     }
 }

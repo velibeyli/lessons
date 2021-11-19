@@ -43,6 +43,28 @@ namespace VirtualKeyword
             3. Arasdir: difference between abstract and virtual
              */
 
+            // Task 1:
+
+            A helloFromA = new A();
+            helloFromA.Common = "Salam Ruslan";
+            helloFromA.Hello();
+
+            //Task 2:
+
+            A helloFromB = new B();
+            helloFromB.Common = "Salam Ruslan (B)";
+            helloFromB.Hello();
+
+            A helloFromC = new C();
+            helloFromC.Common = "Salam Ruslan (C)";
+            helloFromC.Hello();
+
+            A helloFromD = new D();
+            helloFromD.Common = "Salam Ruslan (D)";
+            helloFromD.Hello();
+
+
+
 
 
             Console.ReadLine();

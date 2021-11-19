@@ -20,7 +20,7 @@ namespace SealedClass
             masterCard.Id = 1;
             masterCard.CardNumber = "4656 6564 1233 7955";
             masterCard.HolderName = "Qurban Qurbanov";
-            masterCard.Balance = 125.60;
+            masterCard.Balance = 625.60;
 
             VisaCard visaCard = new VisaCard();
             visaCard.Customer = customer;
@@ -42,6 +42,27 @@ namespace SealedClass
             3. CardNumber ekrana yazilanda 1234 1234 **** **** formatinda olsun.
 
              */
+
+            //Task 1:
+
+            BankCard card = new BankCard();
+            card.HolderName = customer.Name + " " + customer.Surname;
+            Console.WriteLine(card.HolderName);
+            Console.WriteLine("---------------------------");
+
+            //Task 2:
+
+            Console.WriteLine("Master kartda:");
+            masterCard.GetCash(100);
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Visa kartda:");
+            visaCard.GetCash(200);
+
+            //Task 3:
+
+            string hideLastDigit = masterCard.CardNumber.Remove(10, 9).Insert(10, "**** ****").ToString();
+            Console.WriteLine(hideLastDigit);
+
 
             Console.ReadLine();
         }
