@@ -44,21 +44,24 @@ namespace VirtualKeyword
              */
 
             // Task 1:
-
+            var x = "Salam Ruslan";
             A helloFromA = new A();
-            helloFromA.Common = "Salam Ruslan";
+            helloFromA.Common = x;
             helloFromA.Hello();
 
             //Task 2:
 
             A helloFromB = new B();
-            helloFromB.Hello();
+            helloFromB.Common = x;
+            helloFromB.Hello("B");
 
             A helloFromC = new C();
-            helloFromC.Hello();
+            helloFromC.Common = x;
+            helloFromC.Hello("C");
 
             A helloFromD = new D();
-            helloFromD.Hello();
+            helloFromD.Common = x;
+            helloFromD.Hello("D");
 
 
 

@@ -45,8 +45,10 @@ namespace SealedClass
 
             //Task 1:
 
-            BankCard card = new BankCard();
-            card.HolderName = customer.Name + " " + customer.Surname;
+            BankCard card = new MasterCard();
+            card.Customer = customer;
+            //card.HolderName = customer.Name + " " + customer.Surname;
+            card.HolderName = card.Customer.Name + " " + card.Customer.Surname;
             Console.WriteLine(card.HolderName);
             Console.WriteLine("---------------------------");
 

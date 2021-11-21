@@ -10,7 +10,7 @@ namespace VirtualKeyword
     {
         public string CName { get; set; }
         public string CSurname { get; set; }
-        public string Common { get; set; }
+        public override string Common { get; set; }
         public override void ShowMyClassName()
         {
             Console.WriteLine("This method called from class C");
@@ -20,9 +20,9 @@ namespace VirtualKeyword
         {
             Console.WriteLine("ZMethod in C class");
         }
-        public override void Hello()
+        public override void Hello(string letter)
         {
-            Common = "Salam Ruslan (C)";
+            Common += letter;
             Console.WriteLine(Common);
         }
     }

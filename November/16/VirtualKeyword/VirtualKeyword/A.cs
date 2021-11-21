@@ -6,7 +6,7 @@ namespace VirtualKeyword
     {
         public string AName { get; set; }
         public string ASurname{ get; set; }
-        public string Common { get; set; } 
+        public virtual string Common { get; set; } 
         public virtual void ShowMyClassName()
         {
             //Console.WriteLine("This method called from class A");
@@ -27,5 +27,9 @@ namespace VirtualKeyword
             Console.WriteLine(Common);
         }
         
+        public virtual void Hello(string letter)
+        {
+
+        }
     }
 }
