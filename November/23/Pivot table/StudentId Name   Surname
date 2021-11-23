@@ -1,0 +1,21 @@
+StudentId Name   Surname
+
+1         Orkhan Farajov
+2         Ceyhun Babayev
+3         Samir  Hesenov
+
+
+TeacherId Name   Surname
+16        Eli    Eliyev
+17        Zakir  Hikmetli
+18        Aida   Necefova
+
+
+
+PivotTableId  StudentId  TeacherId
+100           1          16
+101           1          17
+102           1          18
+103           2          16
+104           3          18
+104           2          18

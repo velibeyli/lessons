@@ -1,0 +1,11 @@
+StudentId Name   Surname
+
+1         Orkhan Farajov
+2         Ceyhun Babayev
+3         Samir  Hesenov
+
+
+TeacherId Name   Surname    StudentId
+16        Eli    Eliyev     1
+17        Zakir  Hikmetli   2
+18        Aida   Necefova   3
