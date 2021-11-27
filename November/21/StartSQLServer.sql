@@ -64,3 +64,71 @@ HOMEWORK:
 7. Students ve Teachers table'lari sil
 8. Database'i sil.
 */
+
+USE School;
+
+INSERT INTO Teachers 
+(Firstname, Surname, Email, IsActive)
+VALUES
+('Eli', 'Eliyev', 'eli.eliyev@mail.ru', 1);
+
+INSERT INTO Teachers 
+(Firstname, Surname, Email, IsActive)
+VALUES
+('Zakir', 'Hikmetli', 'zakir.hikmetli@mail.ru', 0);
+
+INSERT INTO Teachers 
+(Firstname,  Surname, Email, IsActive)
+VALUES
+('Aida', 'Najafova', 'aida_najafova@mail.ru', 0);
+
+INSERT INTO Students
+(Firstname, Surname, Email, IsActive)
+VALUES
+('Orxan', 'Farajov', 'orxan.farajov@mail.ru', 0);
+
+INSERT INTO Students
+(Firstname, Surname, Email, IsActive)
+VALUES
+('Jeyhun', 'Babayev', 'jeyhun-babayev@mail.ru', 1);
+
+INSERT INTO Students
+(Firstname, Surname, Email, IsActive)
+VALUES
+('Samir', 'Hasanov', 'samir_hasanov@mail.ru', 1);
+
+INSERT INTO Students
+(Firstname, Surname, Email, IsActive)
+VALUES
+('Sabir', 'Mammadov', 'sabirm@mail.ru', 1);
+
+
+UPDATE Teachers SET Email = 'eli_eliyev@gmail.com' WHERE (TeacherId = 1);
+
+UPDATE Students SET Email = 'jeyhunbabayev@hotmail.ru' WHERE (StudentsId = 2);
+
+UPDATE Teachers SET Email = 'zakir@gmail.com' WHERE ( TeacherId = 2);
+
+TRUNCATE TABLE Teachers;
+
+DELETE FROM Students where (StudentsId = 2);
+
+DELETE FROM Students where (StudentsId = 4);
+
+DROP TABLE Students;
+
+DROP TABLE Teachers;
+
+USE School;
+
+/*2. School database'da Teachers adinda bir table olsun hemin table'in asagidaki column'lari olsun:
+	- TeacherId (auto incremental ve primary key olsun)
+	- Firstname
+	- Middlename (nullable olsun)
+	- Surname
+	- Email
+	- IsActive (True/False)
+	*/
+
+
+

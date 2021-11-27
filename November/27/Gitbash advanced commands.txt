@@ -1,0 +1,57 @@
+git config –global user.name “Name Surname”
+git config –global user.email “emailaddress@gmail.com”
+git config –help
+git --version
+
+
+General basic commands:
+echo > textFileWithoutContent.txt (create empty file)
+echo Salam > textFileWithContent.txt (create file with content)
+echo Sagol >> textFileWithContent.txt
+dir
+ls (list in folder)
+ls -a (a=all)
+clear
+rm filename.ext (delete single file)
+mkdir Foldername (create new folder)
+rm -rf Foldername (delete folder)
+cd "Folder path" (enter folder)
+cd .. (go back)
+cp c:/source/test.txt   d:/destination (copy file)
+mv c:/source/test.txt   d:/destination (move file)
+cp -r c:/source/folderName d:/destination (copy folder with including files)
+mv c:/source/folderName d:/destination (move folder with including files)
+
+
+git add . (add all changes to staging area)
+git add filename.txt (add single file to staging area)
+git add *.txt (add all txt files to staging area)
+git commit -m "initial commit" (commit changes from staging area to repo (m = modified))
+git commit -am (or: -a -m) "initial commit" (you can directly add and commit changes from local area to repository area without add changes to staging area by using "-am" insead -m in your commit)
+
+
+git ls-files (status staging area)
+
+https://github.com/github/gitignore
+
+https://gist.github.com/kmorcinek/2710267
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
