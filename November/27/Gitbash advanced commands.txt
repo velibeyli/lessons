@@ -3,6 +3,8 @@ git config –global user.email “emailaddress@gmail.com”
 git config –help
 git --version
 
+pwd  (print working directory)
+
 
 General basic commands:
 echo > textFileWithoutContent.txt (create empty file)
@@ -35,6 +37,7 @@ git ls-files (status staging area)
 https://github.com/github/gitignore
 
 https://gist.github.com/kmorcinek/2710267
+
 
 
 
