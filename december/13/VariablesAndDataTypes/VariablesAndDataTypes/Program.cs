@@ -4,15 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ValueTypeAndReferenceType
+namespace VariablesAndDataTypes
 {
     class Program
     {
+        public static string MyGlobalVariable { get; set; } = "Hello";
+
         static void Main(string[] args)
         {
             #region String Type
             //string name = "orkhan";
             //Console.WriteLine(name);
+
             //string nameSurname = "  orkhan farajov   ";
 
             //nameSurname = nameSurname.TrimEnd();
@@ -30,7 +33,7 @@ namespace ValueTypeAndReferenceType
             //Console.WriteLine("Substring: " + substring);
 
             //bool startsWith = nameSurname.StartsWith("o");
-            //Console.WriteLine("StartsWith 'o'? :" + startsWith);
+            //Console.WriteLine("StartsWith 'o'? :" + startsWith.ToString());
 
             //bool endsWith = nameSurname.EndsWith("p");
             //Console.WriteLine("EndsWith 'p'? :" + endsWith.ToString());
@@ -75,9 +78,8 @@ namespace ValueTypeAndReferenceType
             //var stringToLower = a.ToLower();
             //var toLower = char.ToLower(charA);
             //var toUpper = char.ToUpper(charB);
-            //var isUpper = char.IsUpper(charA);            
+            //var isUpper = char.IsUpper(charA);
             //var isLower = char.IsLower(charA);
-
             //var isWhiteSpace = char.IsWhiteSpace(whiteSpace);
             //var isSymbol = char.IsSymbol(charSymbol);
             //var isDigit = char.IsDigit('4');
@@ -90,16 +92,12 @@ namespace ValueTypeAndReferenceType
             byte byteVariable = 49;
             byte byteMinValue = byte.MinValue; //0
             byte byteMaxValue = byte.MaxValue; //255
-            //Console.WriteLine(byteMaxValue);
-            //Console.WriteLine(byteMinValue);
             #endregion
 
             #region Byte Type
             sbyte sbyteVariable = 127;
             sbyte sbyteMinValue = sbyte.MinValue; //-128
             sbyte sbyteMaxValue = sbyte.MaxValue; //127
-            //Console.WriteLine(sbyteMaxValue);
-            //Console.WriteLine(sbyteMinValue);
             #endregion
 
             #region Short, Int, Long Types
@@ -107,23 +105,19 @@ namespace ValueTypeAndReferenceType
             //int16: 2byte (short)
             //int32: 4byte (int)
             //int64: 8byte (long)
-
-            short shortMinValue = short.MinValue; //-32768
-            short shortMAxValue = short.MaxValue; //32767
-            //Console.WriteLine(shortMAxValue);
-            //Console.WriteLine(shortMinValue);
+            
+            short shortMinValue = short.MinValue;
+            short shortMAxValue = short.MaxValue;
             short shortValue = 28500;
             short shortValueNegative = -26511;
 
-            int intMinValue = int.MinValue; //-2147483648
-            int intMaxValue = int.MaxValue; // 2147483647
-            //Console.WriteLine(intMinValue);
-            //Console.WriteLine(intMaxValue);
+            int intMinValue = int.MinValue;
+            int maxValue = int.MaxValue;
             int integer = 2458745;
             int integerValueNegative = -222151;
 
-            long longMinValue = long.MinValue; // -9223372036854775808
-            long longMaxValue = long.MaxValue; //  9223372036854775807
+            long longMinValue = long.MinValue;
+            long longMaxValue = long.MaxValue;
             long longValue = 215615641156181561;
             long longValueNegative = -215615641156181;
             #endregion
@@ -133,16 +127,14 @@ namespace ValueTypeAndReferenceType
             double doubleVar2 = 2;
             double doubleVar3 = 10.8d;
 
-            double doubleMinValue = double.MinValue; // -1,79769313486232E + 308
-            double doubleMaxValue = double.MaxValue; //  1,79769313486232E + 308
-            //Console.WriteLine(double.MinValue);
-            //Console.WriteLine(double.MaxValue);
+            double doubleMinValue = double.MinValue;
+            double doubleMaxValue = double.MaxValue;
 
             double nan = 0.0 / 0.0;
             double notNan = 5 / 2.5;
             bool resultOfNan = double.IsNaN(nan);
             bool resultOfNotNan = double.IsNaN(notNan);
-
+            
             double infinity = 0.1 / 0.0;
             double notInfinity = 0.0 / 0.0;
             bool resultOfinfinityn = double.IsInfinity(infinity);
@@ -157,10 +149,8 @@ namespace ValueTypeAndReferenceType
             #region Decimal Type
             decimal decimalVar = 50.6m;
 
-            decimal decimalMinValue = decimal.MinValue; //-79228162514264337593543950335
-            decimal decimalMaxValue = decimal.MaxValue; // 79228162514264337593543950335
-            //Console.WriteLine(decimalMinValue);
-            //Console.WriteLine(decimal.MaxValue);
+            decimal decimalMinValue = decimal.MinValue;
+            decimal decimalMaxValue = decimal.MaxValue;
 
             var minusOne = decimal.MinusOne;
             //500
@@ -175,10 +165,8 @@ namespace ValueTypeAndReferenceType
             #region Float Type
             float floatVar = 10.4f;
 
-            float floatMinValue = float.MinValue; //-3,402823E+38
-            float floatMaxValue = float.MaxValue; // 3,402823E+38
-            //Console.WriteLine(floatMaxValue);
-            //Console.WriteLine(floatMinValue);
+            float floatMinValue = float.MinValue;
+            float floatMaxValue = float.MaxValue;
             #endregion
 
             #region Boolean Type
@@ -190,8 +178,6 @@ namespace ValueTypeAndReferenceType
 
             string _true = bool.TrueString;
             string _false = bool.FalseString;
-            //Console.WriteLine(_true);
-            //Console.WriteLine(_false);
             #endregion
 
             #region DateTime Type
@@ -229,6 +215,101 @@ namespace ValueTypeAndReferenceType
             var secondsChanged = now.AddSeconds(20);
             var millisecondsChanged = now.AddMilliseconds(20);
             #endregion
+
+            #region Object Type
+            object textObj = "Orkhan";
+            object integerObj = 18;
+            object booleanObj = true;
+            object decimalObj = 15.2M;
+            object dateTimeObj = new DateTime();
+
+            Console.WriteLine(textObj);
+            Console.WriteLine(integerObj);
+            Console.WriteLine(booleanObj);
+            Console.WriteLine(decimalObj);
+            Console.WriteLine(dateTimeObj);
+            #endregion
+
+            #region Default values of data types
+            var x = 4;
+            //referance-types
+            string defaultOfString;
+            object defaultOfObject;
+            Student student = new Student();
+            //value-types
+            char defaultOfChar;
+            byte defaultOfByte;
+            short defaultOfShort;
+            int defaultOfInt;
+            long defaultOfLong;
+            double defaultOfDouble;
+            decimal defaultOfDecimal;
+            float defaultOfFloat;
+            bool defaultOfBoolean;
+            DateTime defaultOfDateTime;
+
+            Console.ReadLine();
+            #endregion
+
+            #region Local and Global variables
+            int myLocalVariable = 5;
+            Console.WriteLine(myLocalVariable);
+            Console.WriteLine(MyGlobalVariable);
+
+            //local variable to global
+            //int globalVar;
+
+            //{
+            //    int localVar = 555;
+            //    globalVar = localVar;
+            //}
+
+            //{
+            //    Student localStudent = new Student();
+            //    localStudent.Age = globalVar;
+            //}
+
+            
+
+            { //Level 4
+                int level4 = 90000000; //Putin
+                { //Level 3
+                    int level3 = 10000000; //Zaur
+
+                    level4 -= 1000000;
+
+                    { //Level 2
+                        int level2 = 100000; //Ruslan
+                        
+                        level3 -= 500;
+
+                        level3 -= 10000;
+
+                        { //Level 1
+                            int level1 = 150; //Orxan
+
+                            level4 -= 2000000;
+                            level3 -= 5000;
+                            level2 -= 500;
+                        }
+                    }
+                }
+            }
+
+            
+
+            //localVariableInScope = 2;
+            #endregion
         }
+
+        public static void otherMethod()
+        {
+            Console.WriteLine(MyGlobalVariable);
+        }
+    }
+
+    public class Student
+    {
+        public int Age { get; set; }
     }
 }
