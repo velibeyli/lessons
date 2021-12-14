@@ -13,7 +13,6 @@ namespace ValueTypeAndReferenceType
             #region String Type
             //string name = "orkhan";
             //Console.WriteLine(name);
-
             //string nameSurname = "  orkhan farajov   ";
 
             //nameSurname = nameSurname.TrimEnd();
@@ -31,7 +30,7 @@ namespace ValueTypeAndReferenceType
             //Console.WriteLine("Substring: " + substring);
 
             //bool startsWith = nameSurname.StartsWith("o");
-            //Console.WriteLine("StartsWith 'o'? :" + startsWith.ToString());
+            //Console.WriteLine("StartsWith 'o'? :" + startsWith);
 
             //bool endsWith = nameSurname.EndsWith("p");
             //Console.WriteLine("EndsWith 'p'? :" + endsWith.ToString());
@@ -76,8 +75,9 @@ namespace ValueTypeAndReferenceType
             //var stringToLower = a.ToLower();
             //var toLower = char.ToLower(charA);
             //var toUpper = char.ToUpper(charB);
-            //var isUpper = char.IsUpper(charA);
+            //var isUpper = char.IsUpper(charA);            
             //var isLower = char.IsLower(charA);
+
             //var isWhiteSpace = char.IsWhiteSpace(whiteSpace);
             //var isSymbol = char.IsSymbol(charSymbol);
             //var isDigit = char.IsDigit('4');
@@ -90,12 +90,16 @@ namespace ValueTypeAndReferenceType
             byte byteVariable = 49;
             byte byteMinValue = byte.MinValue; //0
             byte byteMaxValue = byte.MaxValue; //255
+            //Console.WriteLine(byteMaxValue);
+            //Console.WriteLine(byteMinValue);
             #endregion
 
             #region Byte Type
             sbyte sbyteVariable = 127;
             sbyte sbyteMinValue = sbyte.MinValue; //-128
             sbyte sbyteMaxValue = sbyte.MaxValue; //127
+            //Console.WriteLine(sbyteMaxValue);
+            //Console.WriteLine(sbyteMinValue);
             #endregion
 
             #region Short, Int, Long Types
@@ -104,18 +108,22 @@ namespace ValueTypeAndReferenceType
             //int32: 4byte (int)
             //int64: 8byte (long)
 
-            short shortMinValue = short.MinValue;
-            short shortMAxValue = short.MaxValue;
+            short shortMinValue = short.MinValue; //-32768
+            short shortMAxValue = short.MaxValue; //32767
+            //Console.WriteLine(shortMAxValue);
+            //Console.WriteLine(shortMinValue);
             short shortValue = 28500;
             short shortValueNegative = -26511;
 
-            int intMinValue = int.MinValue;
-            int maxValue = int.MaxValue;
+            int intMinValue = int.MinValue; //-2147483648
+            int intMaxValue = int.MaxValue; // 2147483647
+            //Console.WriteLine(intMinValue);
+            //Console.WriteLine(intMaxValue);
             int integer = 2458745;
             int integerValueNegative = -222151;
 
-            long longMinValue = long.MinValue;
-            long longMaxValue = long.MaxValue;
+            long longMinValue = long.MinValue; // -9223372036854775808
+            long longMaxValue = long.MaxValue; //  9223372036854775807
             long longValue = 215615641156181561;
             long longValueNegative = -215615641156181;
             #endregion
@@ -125,8 +133,10 @@ namespace ValueTypeAndReferenceType
             double doubleVar2 = 2;
             double doubleVar3 = 10.8d;
 
-            double doubleMinValue = double.MinValue;
-            double doubleMaxValue = double.MaxValue;
+            double doubleMinValue = double.MinValue; // -1,79769313486232E + 308
+            double doubleMaxValue = double.MaxValue; //  1,79769313486232E + 308
+            //Console.WriteLine(double.MinValue);
+            //Console.WriteLine(double.MaxValue);
 
             double nan = 0.0 / 0.0;
             double notNan = 5 / 2.5;
@@ -147,8 +157,10 @@ namespace ValueTypeAndReferenceType
             #region Decimal Type
             decimal decimalVar = 50.6m;
 
-            decimal decimalMinValue = decimal.MinValue;
-            decimal decimalMaxValue = decimal.MaxValue;
+            decimal decimalMinValue = decimal.MinValue; //-79228162514264337593543950335
+            decimal decimalMaxValue = decimal.MaxValue; // 79228162514264337593543950335
+            //Console.WriteLine(decimalMinValue);
+            //Console.WriteLine(decimal.MaxValue);
 
             var minusOne = decimal.MinusOne;
             //500
@@ -163,8 +175,10 @@ namespace ValueTypeAndReferenceType
             #region Float Type
             float floatVar = 10.4f;
 
-            float floatMinValue = float.MinValue;
-            float floatMaxValue = float.MaxValue;
+            float floatMinValue = float.MinValue; //-3,402823E+38
+            float floatMaxValue = float.MaxValue; // 3,402823E+38
+            //Console.WriteLine(floatMaxValue);
+            //Console.WriteLine(floatMinValue);
             #endregion
 
             #region Boolean Type
@@ -176,6 +190,8 @@ namespace ValueTypeAndReferenceType
 
             string _true = bool.TrueString;
             string _false = bool.FalseString;
+            //Console.WriteLine(_true);
+            //Console.WriteLine(_false);
             #endregion
 
             #region DateTime Type
