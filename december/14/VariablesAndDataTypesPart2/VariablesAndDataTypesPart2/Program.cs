@@ -142,7 +142,13 @@ namespace VariablesAndDataTypesPart2
             string strStudentCast = (Student)student;
             string strStudentToString = student.ToString();
 
+            int numberStudent = student;
+            Console.WriteLine(numberStudent);
+
+            Console.ReadLine();
+
             #endregion
+
         }
     }
 
@@ -160,7 +166,19 @@ namespace VariablesAndDataTypesPart2
         }
 
         public static implicit operator string(Student s) => s.Name + " " + s.Surname + " " + s.Age;
+        public static implicit operator int(Student n) => n.Age;
 
         public override string ToString() => Name + " " + Surname + " " + Age.ToString();
     }
+
+    public class StringToInt
+    {
+        public int name;
+        public StringToInt(int _name)
+        {
+            name = _name;
+        }
+        public static implicit operator int (StringToInt s) => s.name; 
+    }
+
 }
