@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -72,7 +73,7 @@ namespace VariablesAndDataTypes
             //char charF = 'F';
             //char charG = 'G';
 
-            //char charSymbol = '*';
+            char charSymbol = '%';
             //char whiteSpace = ' ';
 
             //var stringToLower = a.ToLower();
@@ -81,7 +82,7 @@ namespace VariablesAndDataTypes
             //var isUpper = char.IsUpper(charA);
             //var isLower = char.IsLower(charA);
             //var isWhiteSpace = char.IsWhiteSpace(whiteSpace);
-            //var isSymbol = char.IsSymbol(charSymbol);
+            var isSymbol = char.IsSymbol(charSymbol);
             //var isDigit = char.IsDigit('4');
             //var isDigit2 = char.IsDigit(charG);
             //var isNumber = char.IsNumber('1');
