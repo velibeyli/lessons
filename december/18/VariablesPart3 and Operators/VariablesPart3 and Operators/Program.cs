@@ -63,7 +63,7 @@ namespace VariablesPart3_and_Operators
                 byte[] byteArrayFromBaseString = Convert.FromBase64String(baseString);
                 Console.WriteLine(BitConverter.ToString(byteArrayFromBaseString));
                 #endregion
-
+                
                 #region Var
                 {
                     var intVar = 5;
@@ -131,14 +131,14 @@ namespace VariablesPart3_and_Operators
                     //Conversion result for value: '+000' is true/false
                 }
                 #endregion
-
+                
                 #region HomeWork 2
                 //Console app yazın.
                 //İstifadəçidən Ad, Soyad, Ata Adı, Doğulduğu ölkənin adı və yaşını soruşsun. Sonra bütün bu məlumatları ekranda göstərsin.
                 //Yaşını əgər adam hərf olaraq daxil edibsə, ekranda boş görsənsin. Əgər doğru (rəqəm) olaraq daxil edibsə o zaman yaşını göstərsin.
                 //Məlumatları aldıqdan sonra məlumatları göstərmədən öncə ekranı təmizləyin.
                 #endregion
-
+                
                 #region HomeWork 3
                 string textBool = "True";
                 //Yuxarıdakı textBool dəyişənini iki ayrı conversion növü ilə convert etməyə çalışın.
@@ -150,13 +150,13 @@ namespace VariablesPart3_and_Operators
 
                 //İki ayrı byte tipində olan dəyişənləri toplayıb bir başqa byte dəyişəninə verin.
                 #endregion
-
+                
                 #region HomeWork (Ruslan)
                 {
                     var stringVar = "Hello";
                     object stringObject = "Hello";
                 }
-                #endregion
+                #endregion                
             }
             #endregion
         }
