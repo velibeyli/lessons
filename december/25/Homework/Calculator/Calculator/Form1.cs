@@ -176,15 +176,21 @@ namespace Calculator
 
         private void operator_click(object sender, EventArgs e)
         {
+            Button button = (Button)sender;
             if (resultValue != 0)
             {
-                button_equal.PerformClick
+                button_equal.PerformClick();
+                operationPerformed = button.Text;
+                label_result.Text = resultValue + " " + operationPerformed;
+                isOperationPerformed = true;
             }
-            Button button = (Button)sender;
-            operationPerformed = button.Text;
-            resultValue = double.Parse(textBox_result.Text);
-            label_result.Text = resultValue  + " " + operationPerformed;
-            isOperationPerformed = true;
+            else
+            {
+                operationPerformed = button.Text;
+                resultValue = double.Parse(textBox_result.Text);
+                label_result.Text = resultValue + " " + operationPerformed;
+                isOperationPerformed = true;
+            }
         }
         private void button_clear_Click(object sender, EventArgs e)
         {
@@ -214,6 +220,7 @@ namespace Calculator
                 default:
                     break;
             }
+            resultValue = double.Parse(textBox_result.Text);
         }
 
         private void button_square_Click(object sender, EventArgs e)

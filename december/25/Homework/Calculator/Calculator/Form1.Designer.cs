@@ -153,7 +153,7 @@ namespace Calculator
             this.button_comma.Name = "button_comma";
             this.button_comma.Size = new System.Drawing.Size(86, 54);
             this.button_comma.TabIndex = 8;
-            this.button_comma.Text = ".";
+            this.button_comma.Text = ",";
             this.button_comma.UseVisualStyleBackColor = false;
             this.button_comma.Click += new System.EventHandler(this.button_click);
             this.button_comma.MouseEnter += new System.EventHandler(this.button_comma_MouseEnter);
