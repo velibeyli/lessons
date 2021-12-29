@@ -74,12 +74,12 @@ namespace Loops_Part_1
             #endregion
 
             #region Vurma cədvəli
-            for (int i = 1; i <= 9; i++)
+            for (int i = 1; i <= 10; i++)
             {
-                for (int y = 1; y <= 9; y++)
+                for (int y = 1; y <= 10; y++)
                 {
                     int result = i * y;
-                    Console.Write("{0}*{1}={2}\t", i, y, result);
+                    Console.Write("{0}*{1}={2}\t", y, i, result);
                 }
                 Console.WriteLine();
             }
