@@ -21,10 +21,12 @@ namespace Lops
         Səhv olsa, 
         "1. Cəhdiniz uğursuz!"
         "2. Cəhd - Zəhmət olmasa rəqəmi yazın: " deyə ikinci dəfə soruşsun və bu tapana qədər davam etsin
+
         Homework #2
         App'ın işləmə prinsipi: istifadəçidən username və password soruşulacaq. Əgər username və password kodda əlnən müəyyən edəcəyimiz demo/demo olarsa 
         Sistemə daxil olundu mesajı yazılacaq. Yox yanlış username və ya pass daxil edilərsə, o zaman ekrana Username və ya password yanlışdır mesajı çıxacaq.
         Bu tapşırığı do while istifadə edərək etməlisiniz.
+
         Homework #3
         App'ın işləmə prinsipi: İlk öncə istifadəçidən "Texmin oyunu ucun en yuksek deyeri daxil edin: " yazısı ilə bir rəqəm alınmalıdır. Sonra 1 ilə bu rəqəm arasında random bir
             rəqəm generate edilməlidir və istifadəçidən generate olunan rəqəmi tapmağı istənməlidir. "1. Cəhdiniz! Zəhmət olmasa rəqəmi təxmin edin: " mesajı ilə istifadəçidən random 
