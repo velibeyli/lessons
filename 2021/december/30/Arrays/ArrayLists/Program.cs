@@ -33,6 +33,7 @@ namespace ArrayLists
 
             capacity = students.Capacity;
             count = students.Count;
+            Console.WriteLine(count);
 
             students.Add(5);
             students.Add(true);

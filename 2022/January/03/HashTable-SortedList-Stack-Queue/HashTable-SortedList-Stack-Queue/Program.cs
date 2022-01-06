@@ -99,7 +99,9 @@ namespace HashTable_SortedList_Stack_Queue
             stack.Push("Four");
 
             object o1 = stack.Pop(); //Pop sonuncunu gonderir ve ozunden remove edir
+            Console.WriteLine(o1);
             object o2 = stack.Peek(); //Peek ise sonuncu datani mene gonderir ancaq collection icinden remove etmir
+            Console.WriteLine(o2);
             #endregion
 
             #region Queue
