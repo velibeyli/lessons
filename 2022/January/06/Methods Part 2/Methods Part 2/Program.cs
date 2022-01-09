@@ -42,11 +42,14 @@ namespace Methods_Part_2
             ShowValue(Substraction(15.5M, 2.5M));
             #endregion
 
+            Console.Clear();
+
             #region Local functions
             AdditionWithLocalFunc(20, 20);
+
+            Console.WriteLine();
             #endregion
             
-            Console.Clear();
 
             Console.ReadLine();
         }
