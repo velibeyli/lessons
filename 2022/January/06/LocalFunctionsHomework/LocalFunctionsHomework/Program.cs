@@ -12,7 +12,7 @@ namespace LocalFunctionsHomework
         {
             Console.OutputEncoding = Encoding.UTF8;
 
-            Calculate("10", "300", "%%");
+            Calculate("150","350", "+");
 
             Console.ReadLine();
         }
@@ -21,22 +21,64 @@ namespace LocalFunctionsHomework
             switch (oper)
             {
                 case "+":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Addition(a, b));
+                    decimal Addition(decimal addA, decimal addB)
+                    {
+                        decimal resultAdd = addA + addB;
+                        return resultAdd;
+                    }
+                    decimal resultAdditions = Addition(a, b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultAdditions);
                     break;
                 case "-":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Subtruction(a, b));
+                    decimal Subtruction(decimal subA, decimal subB)
+                    {
+                        decimal resultSub = subA - subB;
+                        return resultSub;
+                    }
+                    decimal resultSubtructions = Subtruction(a, b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultSubtructions);
                     break;
                 case "*":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Multiplication(a, b));
+                    decimal Multiplication(decimal mulA, decimal mulB)
+                    {
+                        decimal resultMul = mulA * mulB;
+                        return resultMul;
+                    }
+                    decimal resultMultiply = Multiplication(a, b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultMultiply);
                     break;
                 case "/":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Divide(a, b));
+                    decimal Divide(decimal divA, decimal divB)
+                    {
+                        if (divB != 0)
+                        {
+                            decimal resultDiv = divA / divB;
+                            return resultDiv;
+                        }
+                        else
+                            Console.WriteLine("Bölən 0 ola bilməz!");
+                        return 0;
+                    }
+                    decimal resultDivide = Divide(a, b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultDivide);
                     break;
                 case "%":
-                    Console.WriteLine("{0}-in {1} {2}-i {3} bərabərdir.", a, b, oper, Percent(a, b));
+                    decimal Percent(decimal perA, decimal perB)
+                    {
+                        decimal resultPer = (perA * perB) / 100;
+                        return resultPer;
+                    }
+                    decimal resultPercent = Percent(a, b);
+                    Console.WriteLine("{0}-in {1} {2}-i {3} bərabərdir.", a, b, oper, resultPercent);
                     break;
                 case "%%":
-                    Console.WriteLine("{0} {1}-in {2} faizinə bərabərdir.", a, b, Rate(a, b));
+                    decimal Rate(decimal rateA, decimal rateB)
+                    {
+                        decimal resultRate = (rateA * 100) / rateB;
+                        return resultRate;
+                    }
+                    decimal resultOfRate = Rate(a, b);
+                    Console.WriteLine("{0} {1}-in {2} faizinə bərabərdir.", a, b, resultOfRate);
                     break;
                 default:
                     break;
@@ -48,22 +90,64 @@ namespace LocalFunctionsHomework
             switch (oper)
             {
                 case "+":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Addition(a, b));
+                    decimal Addition(decimal addA, decimal addB)
+                    {
+                        decimal resultAdd = addA + addB;
+                        return resultAdd;
+                    }
+                    decimal resultAdditions = Addition(a, b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultAdditions);
                     break;
                 case "-":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Subtruction(a, b));
+                    decimal Subtruction(decimal subA, decimal subB)
+                    {
+                        decimal resultSub = subA - subB;
+                        return resultSub;
+                    }
+                    decimal resultSubtructions = Subtruction(a, b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultSubtructions);
                     break;
                 case "*":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Multiplication(a, b));
+                    decimal Multiplication(decimal mulA, decimal mulB)
+                    {
+                        decimal resultMul = mulA * mulB;
+                        return resultMul;
+                    }
+                    decimal resultMultiply = Multiplication(a, b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultMultiply);
                     break;
                 case "/":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Divide(a, b));
+                    decimal Divide(decimal divA, decimal divB)
+                    {
+                        if (divB != 0)
+                        {
+                            decimal resultDiv = divA / divB;
+                            return resultDiv;
+                        }
+                        else
+                            Console.WriteLine("Bölən 0 ola bilməz!");
+                        return 0;
+                    }
+                    decimal resultDivide = Divide(a, b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultDivide);
                     break;
                 case "%":
-                    Console.WriteLine("{0}-in {1} {2}-i {3} bərabərdir.", a, oper, b, Percent(a, b));
+                    decimal Percent(decimal perA, decimal perB)
+                    {
+                        decimal resultPer = (perA * perB) / 100;
+                        return resultPer;
+                    }
+                    decimal resultPercent = Percent(a, b);
+                    Console.WriteLine("{0}-in {1} {2}-i {3} bərabərdir.", a, b, oper, resultPercent);
                     break;
                 case "%%":
-                    Console.WriteLine("{0} {1}-in {2} faizinə bərabərdir.", a, b, Rate(a, b));
+                    decimal Rate(decimal rateA, decimal rateB)
+                    {
+                        decimal resultRate = (rateA * 100) / rateB;
+                        return resultRate;
+                    }
+                    decimal resultOfRate = Rate(a, b);
+                    Console.WriteLine("{0} {1}-in {2} faizinə bərabərdir.", a, b, resultOfRate);
                     break;
                 default:
                     break;
@@ -75,22 +159,64 @@ namespace LocalFunctionsHomework
             switch (oper)
             {
                 case "+":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Addition(decimal.Parse(a), decimal.Parse(b)));
+                    decimal Addition(decimal addA, decimal addB)
+                    {
+                        decimal resultAdd = addA + addB;
+                        return resultAdd;
+                    }
+                    decimal resultAdditions = Addition(Decimal.Parse(a), Decimal.Parse(b));
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultAdditions);
                     break;
                 case "-":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Subtruction(decimal.Parse(a), decimal.Parse(b)));
+                    decimal Subtruction(decimal subA, decimal subB)
+                    {
+                        decimal resultSub = subA - subB;
+                        return resultSub;
+                    }
+                    decimal resultSubtructions = Subtruction(Decimal.Parse(a), Decimal.Parse(b));
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultSubtructions);
                     break;
                 case "*":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Multiplication(decimal.Parse(a), decimal.Parse(b)));
+                    decimal Multiplication(decimal mulA, decimal mulB)
+                    {
+                        decimal resultMul = mulA * mulB;
+                        return resultMul;
+                    }
+                    decimal resultMultiply = Multiplication(Decimal.Parse(a), Decimal.Parse(b));
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultMultiply);
                     break;
                 case "/":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Divide(decimal.Parse(a), decimal.Parse(b)));
+                    decimal Divide(decimal divA, decimal divB)
+                    {
+                        if (divB != 0)
+                        {
+                            decimal resultDiv = divA / divB;
+                            return resultDiv;
+                        }
+                        else
+                            Console.WriteLine("Bölən 0 ola bilməz!");
+                        return 0;
+                    }
+                    decimal resultDivide = Divide(Decimal.Parse(a), Decimal.Parse(b));
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultDivide);
                     break;
                 case "%":
-                    Console.WriteLine("{0}-in {1} {2}-i {3} bərabərdir.", a, oper, b, Percent(decimal.Parse(a), decimal.Parse(b)));
+                    decimal Percent(decimal perA, decimal perB)
+                    {
+                        decimal resultPer = (perA * perB) / 100;
+                        return resultPer;
+                    }
+                    decimal resultPercent = Percent(Decimal.Parse(a), Decimal.Parse(b));
+                    Console.WriteLine("{0}-in {1} {2}-i {3} bərabərdir.", a, b, oper, resultPercent);
                     break;
                 case "%%":
-                    Console.WriteLine("{0} {1}-in {2} faizinə bərabərdir.", a, b, Rate(decimal.Parse(a), decimal.Parse(b)));
+                    decimal Rate(decimal rateA, decimal rateB)
+                    {
+                        decimal resultRate = (rateA * 100) / rateB;
+                        return resultRate;
+                    }
+                    decimal resultOfRate = Rate(Decimal.Parse(a), Decimal.Parse(b));
+                    Console.WriteLine("{0} {1}-in {2} faizinə bərabərdir.", a, b, resultOfRate);
                     break;
                 default:
                     break;
@@ -102,22 +228,64 @@ namespace LocalFunctionsHomework
             switch (oper)
             {
                 case "+":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Addition(a, b));
+                    decimal Addition(decimal addA, decimal addB)
+                    {
+                        decimal resultAdd = addA + addB;
+                        return resultAdd;
+                    }
+                    decimal resultAdditions = Addition(a, b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultAdditions);
                     break;
                 case "-":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Subtruction(a, b));
+                    decimal Subtruction(decimal subA, decimal subB)
+                    {
+                        decimal resultSub = subA - subB;
+                        return resultSub;
+                    }
+                    decimal resultSubtructions = Subtruction(a, b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultSubtructions);
                     break;
                 case "*":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Multiplication(a, b));
+                    decimal Multiplication(decimal mulA, decimal mulB)
+                    {
+                        decimal resultMul = mulA * mulB;
+                        return resultMul;
+                    }
+                    decimal resultMultiply = Multiplication(a, b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultMultiply);
                     break;
                 case "/":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Divide(a, b));
+                    decimal Divide(decimal divA, decimal divB)
+                    {
+                        if (divB != 0)
+                        {
+                            decimal resultDiv = divA / divB;
+                            return resultDiv;
+                        }
+                        else
+                            Console.WriteLine("Bölən 0 ola bilməz!");
+                        return 0;
+                    }
+                    decimal resultDivide = Divide(a, b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultDivide);
                     break;
                 case "%":
-                    Console.WriteLine("{0}-in {1} {2}-i {3} bərabərdir.", a, oper, b, Percent(a, b));
+                    decimal Percent(decimal perA, decimal perB)
+                    {
+                        decimal resultPer = (perA * perB) / 100;
+                        return resultPer;
+                    }
+                    decimal resultPercent = Percent(a, b);
+                    Console.WriteLine("{0}-in {1} {2}-i {3} bərabərdir.", a, b, oper, resultPercent);
                     break;
                 case "%%":
-                    Console.WriteLine("{0} {1}-in {2} faizinə bərabərdir.", a, b, Rate(a, b));
+                    decimal Rate(decimal rateA, decimal rateB)
+                    {
+                        decimal resultRate = (rateA * 100) / rateB;
+                        return resultRate;
+                    }
+                    decimal resultOfRate = Rate(a, b);
+                    Console.WriteLine("{0} {1}-in {2} faizinə bərabərdir.", a, b, resultOfRate);
                     break;
                 default:
                     break;
@@ -129,173 +297,340 @@ namespace LocalFunctionsHomework
             switch (oper)
             {
                 case "+":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Addition(a, b));
+                    decimal Addition(decimal addA, decimal addB)
+                    {
+                        decimal resultAdd = addA + addB;
+                        return resultAdd;
+                    }
+                    decimal resultAdditions = Addition(a, b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultAdditions);
                     break;
                 case "-":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Subtruction(a, b));
+                    decimal Subtruction(decimal subA, decimal subB)
+                    {
+                        decimal resultSub = subA - subB;
+                        return resultSub;
+                    }
+                    decimal resultSubtructions = Subtruction(a, b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultSubtructions);
                     break;
                 case "*":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Multiplication(a, b));
+                    decimal Multiplication(decimal mulA, decimal mulB)
+                    {
+                        decimal resultMul = mulA * mulB;
+                        return resultMul;
+                    }
+                    decimal resultMultiply = Multiplication(a, b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultMultiply);
                     break;
                 case "/":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Divide(a, b));
+                    decimal Divide(decimal divA, decimal divB)
+                    {
+                        if (divB != 0)
+                        {
+                            decimal resultDiv = divA / divB;
+                            return resultDiv;
+                        }
+                        else
+                            Console.WriteLine("Bölən 0 ola bilməz!");
+                        return 0;
+                    }
+                    decimal resultDivide = Divide(a, b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultDivide);
                     break;
                 case "%":
-                    Console.WriteLine("{0}-in {1} {2}-i {3} bərabərdir.", a, oper, b, Percent(a, b));
+                    decimal Percent(decimal perA, decimal perB)
+                    {
+                        decimal resultPer = (perA * perB) / 100;
+                        return resultPer;
+                    }
+                    decimal resultPercent = Percent(a, b);
+                    Console.WriteLine("{0}-in {1} {2}-i {3} bərabərdir.", a, b, oper, resultPercent);
                     break;
                 case "%%":
-                    Console.WriteLine("{0} {1}-in {2} faizinə bərabərdir.", a, b, Rate(a, b));
+                    decimal Rate(decimal rateA, decimal rateB)
+                    {
+                        decimal resultRate = (rateA * 100) / rateB;
+                        return resultRate;
+                    }
+                    decimal resultOfRate = Rate(a, b);
+                    Console.WriteLine("{0} {1}-in {2} faizinə bərabərdir.", a, b, resultOfRate);
                     break;
                 default:
                     break;
             }
-
         }
         static void Calculate(int a, string b, string oper)
         {
             switch (oper)
             {
                 case "+":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Addition(a, decimal.Parse(b)));
+                    decimal Addition(decimal addA, decimal addB)
+                    {
+                        decimal resultAdd = addA + addB;
+                        return resultAdd;
+                    }
+                    decimal resultAdditions = Addition(a, decimal.Parse(b));
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultAdditions);
                     break;
                 case "-":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Subtruction(a, decimal.Parse(b)));
+                    decimal Subtruction(decimal subA, decimal subB)
+                    {
+                        decimal resultSub = subA - subB;
+                        return resultSub;
+                    }
+                    decimal resultSubtructions = Subtruction(a, decimal.Parse(b));
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultSubtructions);
                     break;
                 case "*":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Multiplication(a, decimal.Parse(b)));
+                    decimal Multiplication(decimal mulA, decimal mulB)
+                    {
+                        decimal resultMul = mulA * mulB;
+                        return resultMul;
+                    }
+                    decimal resultMultiply = Multiplication(a, decimal.Parse(b));
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultMultiply);
                     break;
                 case "/":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Divide(a, decimal.Parse(b)));
+                    decimal Divide(decimal divA, decimal divB)
+                    {
+                        if (divB != 0)
+                        {
+                            decimal resultDiv = divA / divB;
+                            return resultDiv;
+                        }
+                        else
+                            Console.WriteLine("Bölən 0 ola bilməz!");
+                        return 0;
+                    }
+                    decimal resultDivide = Divide(a, decimal.Parse(b));
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultDivide);
                     break;
                 case "%":
-                    Console.WriteLine("{0}-in {1} {2}-i {3} bərabərdir.", a, oper, b, Percent(a, decimal.Parse(b)));
+                    decimal Percent(decimal perA, decimal perB)
+                    {
+                        decimal resultPer = (perA * perB) / 100;
+                        return resultPer;
+                    }
+                    decimal resultPercent = Percent(a, decimal.Parse(b));
+                    Console.WriteLine("{0}-in {1} {2}-i {3} bərabərdir.", a, b, oper, resultPercent);
                     break;
                 case "%%":
-                    Console.WriteLine("{0} {1}-in {2} faizinə bərabərdir.", a, b, Rate(a, decimal.Parse(b)));
+                    decimal Rate(decimal rateA, decimal rateB)
+                    {
+                        decimal resultRate = (rateA * 100) / rateB;
+                        return resultRate;
+                    }
+                    decimal resultOfRate = Rate(a, decimal.Parse(b));
+                    Console.WriteLine("{0} {1}-in {2} faizinə bərabərdir.", a, b, resultOfRate);
                     break;
                 default:
                     break;
             }
-
         }
         static void Calculate(string a, int b, string oper)
         {
             switch (oper)
             {
                 case "+":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Addition(decimal.Parse(a), b));
+                    decimal Addition(decimal addA, decimal addB)
+                    {
+                        decimal resultAdd = addA + addB;
+                        return resultAdd;
+                    }
+                    decimal resultAdditions = Addition(decimal.Parse(a), b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultAdditions);
                     break;
                 case "-":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Subtruction(decimal.Parse(a), b));
+                    decimal Subtruction(decimal subA, decimal subB)
+                    {
+                        decimal resultSub = subA - subB;
+                        return resultSub;
+                    }
+                    decimal resultSubtructions = Subtruction(decimal.Parse(a), b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultSubtructions);
                     break;
                 case "*":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Multiplication(decimal.Parse(a), b));
+                    decimal Multiplication(decimal mulA, decimal mulB)
+                    {
+                        decimal resultMul = mulA * mulB;
+                        return resultMul;
+                    }
+                    decimal resultMultiply = Multiplication(decimal.Parse(a), b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultMultiply);
                     break;
                 case "/":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Divide(decimal.Parse(a), b));
+                    decimal Divide(decimal divA, decimal divB)
+                    {
+                        if (divB != 0)
+                        {
+                            decimal resultDiv = divA / divB;
+                            return resultDiv;
+                        }
+                        else
+                            Console.WriteLine("Bölən 0 ola bilməz!");
+                        return 0;
+                    }
+                    decimal resultDivide = Divide(decimal.Parse(a), b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultDivide);
                     break;
                 case "%":
-                    Console.WriteLine("{0}-in {1} {2}-i {3} bərabərdir.", a, oper, b, Percent(decimal.Parse(a), b));
+                    decimal Percent(decimal perA, decimal perB)
+                    {
+                        decimal resultPer = (perA * perB) / 100;
+                        return resultPer;
+                    }
+                    decimal resultPercent = Percent(decimal.Parse(a), b);
+                    Console.WriteLine("{0}-in {1} {2}-i {3} bərabərdir.", a, b, oper, resultPercent);
                     break;
                 case "%%":
-                    Console.WriteLine("{0} {1}-in {2} faizinə bərabərdir.", a, b, Rate(decimal.Parse(a), b));
+                    decimal Rate(decimal rateA, decimal rateB)
+                    {
+                        decimal resultRate = (rateA * 100) / rateB;
+                        return resultRate;
+                    }
+                    decimal resultOfRate = Rate(decimal.Parse(a), b);
+                    Console.WriteLine("{0} {1}-in {2} faizinə bərabərdir.", a, b, resultOfRate);
                     break;
                 default:
                     break;
             }
-
-        }
-        static void Calculate(string a, decimal b, string oper)
-        {
-            switch (oper)
-            {
-                case "+":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Addition(decimal.Parse(a), b));
-                    break;
-                case "-":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Subtruction(decimal.Parse(a), b));
-                    break;
-                case "*":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Multiplication(decimal.Parse(a), b));
-                    break;
-                case "/":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Divide(decimal.Parse(a), b));
-                    break;
-                case "%":
-                    Console.WriteLine("{0}-in {1} {2}-i {3} bərabərdir.", a, oper, b, Percent(decimal.Parse(a), b));
-                    break;
-                case "%%":
-                    Console.WriteLine("{0} {1}-in {2} faizinə bərabərdir.", a, b, Rate(decimal.Parse(a), b));
-                    break;
-                default:
-                    break;
-            }
-
         }
         static void Calculate(decimal a, string b, string oper)
         {
             switch (oper)
             {
                 case "+":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Addition(a, decimal.Parse(b)));
+                    decimal Addition(decimal addA, decimal addB)
+                    {
+                        decimal resultAdd = addA + addB;
+                        return resultAdd;
+                    }
+                    decimal resultAdditions = Addition(a, decimal.Parse(b));
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultAdditions);
                     break;
                 case "-":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Subtruction(a, decimal.Parse(b)));
+                    decimal Subtruction(decimal subA, decimal subB)
+                    {
+                        decimal resultSub = subA - subB;
+                        return resultSub;
+                    }
+                    decimal resultSubtructions = Subtruction(a, decimal.Parse(b));
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultSubtructions);
                     break;
                 case "*":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Multiplication(a, decimal.Parse(b)));
+                    decimal Multiplication(decimal mulA, decimal mulB)
+                    {
+                        decimal resultMul = mulA * mulB;
+                        return resultMul;
+                    }
+                    decimal resultMultiply = Multiplication(a, decimal.Parse(b));
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultMultiply);
                     break;
                 case "/":
-                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, Divide(a, decimal.Parse(b)));
+                    decimal Divide(decimal divA, decimal divB)
+                    {
+                        if (divB != 0)
+                        {
+                            decimal resultDiv = divA / divB;
+                            return resultDiv;
+                        }
+                        else
+                            Console.WriteLine("Bölən 0 ola bilməz!");
+                        return 0;
+                    }
+                    decimal resultDivide = Divide(a, decimal.Parse(b));
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultDivide);
                     break;
                 case "%":
-                    Console.WriteLine("{0}-in {1} {2}-i {3} bərabərdir.", a, oper, b, Percent(a, decimal.Parse(b)));
+                    decimal Percent(decimal perA, decimal perB)
+                    {
+                        decimal resultPer = (perA * perB) / 100;
+                        return resultPer;
+                    }
+                    decimal resultPercent = Percent(a, decimal.Parse(b));
+                    Console.WriteLine("{0}-in {1} {2}-i {3} bərabərdir.", a, b, oper, resultPercent);
                     break;
                 case "%%":
-                    Console.WriteLine("{0} {1}-in {2} faizinə bərabərdir.", a, b, Rate(a, decimal.Parse(b)));
+                    decimal Rate(decimal rateA, decimal rateB)
+                    {
+                        decimal resultRate = (rateA * 100) / rateB;
+                        return resultRate;
+                    }
+                    decimal resultOfRate = Rate(a, decimal.Parse(b));
+                    Console.WriteLine("{0} {1}-in {2} faizinə bərabərdir.", a, b, resultOfRate);
                     break;
                 default:
                     break;
             }
-
         }
-
-
-        static decimal Addition(decimal addA,decimal addB)
+        static void Calculate(string a, decimal b, string oper)
         {
-            decimal resultAdd = addA + addB;
-            return resultAdd;
-        }
-        static decimal Subtruction(decimal subA, decimal subB)
-        {
-            decimal resultSub = subA - subB;
-            return resultSub;
-        }
-        static decimal Multiplication(decimal mulA,decimal mulB)
-        {
-            decimal resultMul = mulA * mulB;
-            return resultMul;
-        }
-        static decimal Divide(decimal divA,decimal divB)
-        {
-            if (divB != 0)
+            switch (oper)
             {
-                decimal resultDiv = divA / divB;
-                return resultDiv;
+                case "+":
+                    decimal Addition(decimal addA, decimal addB)
+                    {
+                        decimal resultAdd = addA + addB;
+                        return resultAdd;
+                    }
+                    decimal resultAdditions = Addition(decimal.Parse(a), b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultAdditions);
+                    break;
+                case "-":
+                    decimal Subtruction(decimal subA, decimal subB)
+                    {
+                        decimal resultSub = subA - subB;
+                        return resultSub;
+                    }
+                    decimal resultSubtructions = Subtruction(decimal.Parse(a), b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultSubtructions);
+                    break;
+                case "*":
+                    decimal Multiplication(decimal mulA, decimal mulB)
+                    {
+                        decimal resultMul = mulA * mulB;
+                        return resultMul;
+                    }
+                    decimal resultMultiply = Multiplication(decimal.Parse(a), b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultMultiply);
+                    break;
+                case "/":
+                    decimal Divide(decimal divA, decimal divB)
+                    {
+                        if (divB != 0)
+                        {
+                            decimal resultDiv = divA / divB;
+                            return resultDiv;
+                        }
+                        else
+                            Console.WriteLine("Bölən 0 ola bilməz!");
+                        return 0;
+                    }
+                    decimal resultDivide = Divide(decimal.Parse(a), b);
+                    Console.WriteLine("{0} {1} {2} = {3}", a, oper, b, resultDivide);
+                    break;
+                case "%":
+                    decimal Percent(decimal perA, decimal perB)
+                    {
+                        decimal resultPer = (perA * perB) / 100;
+                        return resultPer;
+                    }
+                    decimal resultPercent = Percent(decimal.Parse(a), b);
+                    Console.WriteLine("{0}-in {1} {2}-i {3} bərabərdir.", a, b, oper, resultPercent);
+                    break;
+                case "%%":
+                    decimal Rate(decimal rateA, decimal rateB)
+                    {
+                        decimal resultRate = (rateA * 100) / rateB;
+                        return resultRate;
+                    }
+                    decimal resultOfRate = Rate(decimal.Parse(a), b);
+                    Console.WriteLine("{0} {1}-in {2} faizinə bərabərdir.", a, b, resultOfRate);
+                    break;
+                default:
+                    break;
             }
-            else
-                Console.WriteLine("Bölən 0 ola bilməz!");
-            return 0;            
-        }
-        static decimal Percent(decimal perA,decimal perB)
-        {
-            decimal resultPer = (perA * perB) / 100;
-            return resultPer;
-        }
-        static decimal Rate(decimal rateA, decimal rateB)
-        {
-            decimal resultRate = (rateA * 100) / rateB;
-            return resultRate;
         }
     }
 }
