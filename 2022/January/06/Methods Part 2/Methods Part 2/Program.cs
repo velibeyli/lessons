@@ -17,7 +17,7 @@ namespace Methods_Part_2
 
             #region Ref and Out keywords
             int num1 = 0;
-            SetRef(ref num1);
+            SetRef(num1);
 
             int num2;
             SetOut(out num2);
@@ -62,7 +62,7 @@ namespace Methods_Part_2
         #endregion
 
         #region Ref and Out keywords
-        static void SetRef(ref int intValue)
+        static void SetRef(int intValue)
         {
             intValue = 10;
         }
