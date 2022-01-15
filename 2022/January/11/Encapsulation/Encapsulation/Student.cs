@@ -32,6 +32,9 @@ namespace Encapsulation
                 this._surname = value;
                 if (!string.IsNullOrEmpty(_name))
                     this._email = string.Format("{0}.{1}@company.com", _name.ToLower(), _surname.ToLower());
+                else
+                    Console.WriteLine("Ad hissesi bos ola bilmez");
+
             }
         }
 

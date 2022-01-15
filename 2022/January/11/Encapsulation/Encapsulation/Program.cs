@@ -27,9 +27,12 @@ namespace Encapsulation
             var email1 = student.Email;
 
             Student student2 = new Student();
-            student2.Name = "Ruslan";
+            student2.Name = "";
             student2.Surname = "Valiyev";
             var email2 = student2.Email;
+            Console.WriteLine(email2);
+
+            Console.ReadLine();
             #endregion
         }
     }
