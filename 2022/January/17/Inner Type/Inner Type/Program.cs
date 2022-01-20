@@ -71,7 +71,7 @@ namespace Inner_Type
                 OrderDetails = "Samsung Galaxy S9+, 600usd",
                 CreateDate = DateTime.Now
             };
-
+            Console.WriteLine(customer.Orders);
             Order laptopOrder = new Order()
             {
                 Id = 621,
@@ -102,6 +102,7 @@ namespace Inner_Type
                EditDate: Data is not edited və ya 12.12.2018
              */
             #endregion
+            Console.ReadLine();
         }
     }
 }

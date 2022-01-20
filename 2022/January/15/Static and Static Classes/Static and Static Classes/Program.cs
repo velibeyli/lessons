@@ -10,28 +10,29 @@ namespace Static_and_Static_Classes
     {
         static void Main(string[] args)
         {
-            #region What is static
-            Student student;
-            //student.Name = "a"; //non-static fields, properties and methods can't use before creating an instance of class
-            Student.Test1();
+            //#region What is static
+            //Student student;
+            ////student.Name = "a"; //non-static fields, properties and methods can't use before creating an instance of class
+            //Student.Test1();
 
-            student = new Student();
-            student.Name = "Orkhan";
-            student.Surname = "Farajov";
-            student.Email = "orkhankhf@gmail.com";
-            student.Test();
-            #endregion
+            //student = new Student();
+            //student.Name = "Orkhan";
+            //student.Surname = "Farajov";
+            //student.Email = "orkhankhf@gmail.com";
+            //student.Test();
+            //#endregion
 
-            #region Where and why to use static
-            var fullname = StringHelper.CheckFullname("Orkhan", "Farajov");
-            var longFullname = StringHelper.CheckFullname("OrkhanOrkhanOrkhan", "Farajov");
-            #endregion
+            //#region Where and why to use static
+            //var fullname = StringHelper.CheckFullname("Orkhan", "Farajov");
+            //var longFullname = StringHelper.CheckFullname("OrkhanOrkhanOrkhan", "Farajov");
+            //#endregion
 
             #region Example static field
             Staff st = new Staff();
             st.Name = "Orkhan";
             st.Surname = "Farajov";
             st.Email = "orkhan@gmail.com"; //set etmesen islemeyecek
+            Console.WriteLine(st.Email);
             st.Gender = 1;
 
             #endregion
