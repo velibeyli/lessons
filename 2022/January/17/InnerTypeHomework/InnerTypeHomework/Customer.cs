@@ -20,25 +20,43 @@ namespace InnerTypeHomework
         public DateTime? EditDate { get; set; }
         public void ShowCustomerInfo()
         {
-            Console.WriteLine("Id: {0}", Id);
-            Console.WriteLine("Name: {0}", Name);
-            Console.WriteLine("Surname: {0}", Surname);
-            Console.WriteLine("Document No: {0}", DocumentNo);
-            Console.WriteLine("Birth of date: {0}", BirthDate);
-            Console.WriteLine("Create date: {0}", CreateDate);
-            Console.WriteLine("Edited date: {0}", EditDate);
-
-            foreach (Contact contact in Contacts)
-            {
-                if(contact != null)
-                    contact.ShowContactInfo();
-            }
+            Console.WriteLine("Customer  Id: {0}", Id);
+            Console.WriteLine("Customer  Name: {0}", Name);
+            Console.WriteLine("Customer  Surname: {0}", Surname);
+            Console.WriteLine("Customer  Document No: {0}", DocumentNo);
+            Console.WriteLine("Customer  Birth of date: {0}", BirthDate);
+            Console.WriteLine("Customer  Create date: {0}", CreateDate);
+            Console.WriteLine("Customer  Edited date: {0}", EditDate);
         }
         public Customer()
         {
             this.Contacts = new Contact[100];
             this.Orders = new Order[100];
             this.Addresses = new Address[100];
+        }
+        public void ShowContact()
+        {
+            foreach (Contact contact in Contacts)
+            {
+                if (contact != null)
+                    contact.ShowContactInfo();
+            }
+        }
+        public void ShowAddressesInfo()
+        {
+            foreach (Address adress in Addresses)
+            {
+                if (adress != null)
+                    adress.ShowAddress();
+            }
+        }
+        public void ShowOrderInfo()
+        {
+            foreach (Order order in Orders)
+            {
+                if (order != null)
+                    order.ShowOrder();
+            }
         }
     }
 }

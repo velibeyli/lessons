@@ -15,9 +15,10 @@ namespace InnerTypeHomework
         public DateTime? EditDate { get; set; }
         public void ShowContactInfo()
         {
-            Console.WriteLine(Id);
-            Console.WriteLine(PhoneNumber);
-            Console.WriteLine(Email);
+            Console.WriteLine("Contact Id: {0}",Id);
+            Console.WriteLine("Contact Phone number: {0}",PhoneNumber);
+            Console.WriteLine("Contact Email {0}",Email);
+            Console.WriteLine("Contact created date: {0}",CreateDate);
         }
     }
 }

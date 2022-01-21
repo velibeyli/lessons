@@ -36,14 +36,6 @@ namespace InnerTypeHomework
                 CreateDate= DateTime.Now,
                 EditDate= DateTime.Now
             };
-            Contact contact1 = new Contact()
-            {
-                Id = 100,
-                PhoneNumber = "94518120292",
-                Email = "velibeyli91@mail.ru",
-                CreateDate = DateTime.Now
-            };
-            customers.Contacts[0] = contact1;
             customers.Orders[0] = new Order()
             {
                 Id = 110,
@@ -61,8 +53,21 @@ namespace InnerTypeHomework
                 City = city,
                 CreateDate = DateTime.Now
             };
+            customers.Contacts[1] = new Contact()
+            {
+                Id = 200,
+                PhoneNumber = "994552070151",
+                Email = "velibeyli.ruslan@gmail.com",
+                CreateDate = DateTime.Now
+            };
 
             customers.ShowCustomerInfo();
+            Console.WriteLine("========================");
+            customers.ShowContact();
+            Console.WriteLine("========================");
+            customers.ShowAddressesInfo();
+            Console.WriteLine("========================");
+            customers.ShowOrderInfo();
 
             Console.ReadLine();
         }

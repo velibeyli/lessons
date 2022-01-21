@@ -16,5 +16,16 @@ namespace InnerTypeHomework
         public City City { get; set; }
         public DateTime CreateDate { get; set; }
         public DateTime? EditDate { get; set; }
+        public void ShowAddress()
+        {
+            Console.WriteLine("Address Id: {0}",Id);
+            Console.WriteLine("Address No: {0}", No);
+            Console.WriteLine("Address Building: {0}", Building);
+            Console.WriteLine("Address Street: {0}", Street);
+            Console.WriteLine("Address Distinct: {0}", Distinct);
+            Console.WriteLine("Address Create Date: {0}", CreateDate);
+            Console.WriteLine();
+            City.ShowCity();
+        }
     }
 }

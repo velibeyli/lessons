@@ -13,5 +13,13 @@ namespace InnerTypeHomework
         public Country Country { get; set; }
         public DateTime CreateDate { get; set; }
         public DateTime? EditDate { get; set; }
+        public void ShowCity()
+        {
+            Console.WriteLine("City Id: {0}",Id);
+            Console.WriteLine("City Name: {0}",Name);
+            Console.WriteLine("City created date: {0}", CreateDate);
+            Console.WriteLine();
+            Country.ShowCountry();
+        }
     }
 }
