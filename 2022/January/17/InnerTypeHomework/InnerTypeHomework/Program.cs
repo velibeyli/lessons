@@ -63,7 +63,6 @@ namespace InnerTypeHomework
             };
 
             customers.ShowCustomerInfo();
-            customers.ShowContacts();
 
             Console.ReadLine();
         }

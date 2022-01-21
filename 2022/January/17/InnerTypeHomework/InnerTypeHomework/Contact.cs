@@ -13,5 +13,11 @@ namespace InnerTypeHomework
         public string Email { get; set; }
         public DateTime CreateDate { get; set; }
         public DateTime? EditDate { get; set; }
+        public void ShowContactInfo()
+        {
+            Console.WriteLine(Id);
+            Console.WriteLine(PhoneNumber);
+            Console.WriteLine(Email);
+        }
     }
 }

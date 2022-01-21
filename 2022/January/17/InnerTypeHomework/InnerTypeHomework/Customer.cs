@@ -27,19 +27,18 @@ namespace InnerTypeHomework
             Console.WriteLine("Birth of date: {0}", BirthDate);
             Console.WriteLine("Create date: {0}", CreateDate);
             Console.WriteLine("Edited date: {0}", EditDate);
+
+            foreach (Contact contact in Contacts)
+            {
+                if(contact != null)
+                    contact.ShowContactInfo();
+            }
         }
         public Customer()
         {
             this.Contacts = new Contact[100];
             this.Orders = new Order[100];
             this.Addresses = new Address[100];
-        }
-        public void ShowContacts()
-        {
-            foreach (var contact in Contacts)
-            {
-                Console.WriteLine(contact);
-            }
         }
     }
 }
