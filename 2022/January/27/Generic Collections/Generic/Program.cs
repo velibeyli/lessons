@@ -46,7 +46,7 @@ namespace Generic
             itemRepository.Add(item);
 
 
-
+            Console.ReadLine();
 
             //GenericRepository<int> intRepository = new GenericRepository<int>();
             //ok: GenericRepository<Customer>

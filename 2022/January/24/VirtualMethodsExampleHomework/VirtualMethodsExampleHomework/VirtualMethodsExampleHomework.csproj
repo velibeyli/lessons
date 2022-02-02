@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{159D0770-9F74-48C7-B9F2-C5CA0AB792C7}</ProjectGuid>
+    <ProjectGuid>{DE950B77-CDEF-44E9-98A6-DE5DB719F03C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Generic</RootNamespace>
-    <AssemblyName>Generic</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RootNamespace>VirtualMethodsExampleHomework</RootNamespace>
+    <AssemblyName>VirtualMethodsExampleHomework</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -44,11 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customer.cs" />
-    <Compile Include="GenericCustomer.cs" />
-    <Compile Include="GenericRepository.cs" />
-    <Compile Include="Item.cs" />
-    <Compile Include="MultipleGenericClass.cs" />
+    <Compile Include="BaseClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.cs" />
