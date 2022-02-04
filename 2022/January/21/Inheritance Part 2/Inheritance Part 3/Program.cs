@@ -19,7 +19,7 @@ namespace Inheritance_Part_3
              */
             /*
              public: istər proyektin içində və ya kənarından obyekti əl çatan edir.
-             provate: bir property'ni və ya bir methodu private təyin etdiyimiz zaman ancaq olduğu class daxilində onu istifadə edə bilirik.
+             private: bir property'ni və ya bir methodu private təyin etdiyimiz zaman ancaq olduğu class daxilində onu istifadə edə bilirik.
              protected: protected normalda private kimi davranır. 
              */
             Student student = new Student();

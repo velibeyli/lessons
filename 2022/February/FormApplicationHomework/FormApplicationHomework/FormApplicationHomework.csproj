@@ -4,15 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C51ACD8A-FB9A-466B-9CE9-F1F5005050F9}</ProjectGuid>
+    <ProjectGuid>{4C00EB13-5E72-45D7-9F66-DF3D80088CD6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WindowsFormFirstLesson</RootNamespace>
-    <AssemblyName>WindowsFormFirstLesson</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RootNamespace>FormApplicationHomework</RootNamespace>
+    <AssemblyName>FormApplicationHomework</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -53,28 +52,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SendMessage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SendMessage.Designer.cs">
-      <DependentUpon>SendMessage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ShowMessage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ShowMessage.Designer.cs">
-      <DependentUpon>ShowMessage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TestFormWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TestFormWindow.Designer.cs">
-      <DependentUpon>TestFormWindow.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -84,17 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="SendMessage.resx">
-      <DependentUpon>SendMessage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ShowMessage.resx">
-      <DependentUpon>ShowMessage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TestFormWindow.resx">
-      <DependentUpon>TestFormWindow.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
