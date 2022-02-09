@@ -101,7 +101,6 @@
             // 
             // passwordEdit
             // 
-            this.passwordEdit.Enabled = false;
             this.passwordEdit.Location = new System.Drawing.Point(271, 42);
             this.passwordEdit.Name = "passwordEdit";
             this.passwordEdit.Size = new System.Drawing.Size(100, 20);

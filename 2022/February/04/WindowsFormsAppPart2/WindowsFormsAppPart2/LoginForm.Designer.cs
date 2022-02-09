@@ -53,8 +53,8 @@
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(157, 20);
             this.usernameTextBox.TabIndex = 1;
-            this.usernameTextBox.Enter += new System.EventHandler(this.TextboxEnterColor);
-            this.usernameTextBox.Leave += new System.EventHandler(this.TextboxLeaveColor);
+            this.usernameTextBox.Enter += new System.EventHandler(this.MouseToggleEvent);
+            this.usernameTextBox.Leave += new System.EventHandler(this.MouseToggleEvent);
             // 
             // passwordLabel
             // 
@@ -72,8 +72,8 @@
             this.passwordTextBox.PasswordChar = '*';
             this.passwordTextBox.Size = new System.Drawing.Size(157, 20);
             this.passwordTextBox.TabIndex = 2;
-            this.passwordTextBox.Enter += new System.EventHandler(this.TextboxEnterColor);
-            this.passwordTextBox.Leave += new System.EventHandler(this.TextboxLeaveColor);
+            this.passwordTextBox.Enter += new System.EventHandler(this.MouseToggleEvent);
+            this.passwordTextBox.Leave += new System.EventHandler(this.MouseToggleEvent);
             // 
             // loginBtn
             // 

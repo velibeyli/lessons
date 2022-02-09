@@ -27,16 +27,29 @@ namespace WindowsFormsAppPart2
                 MessageBox.Show("Istifadeci melumatlari yanlisdir!", "Xeta!", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
-        private void TextboxEnterColor(object sender, EventArgs e)
+        private void MouseToggleEvent(object sender, EventArgs e)
         {
             TextBox textBox = (TextBox)sender;
-            textBox.BackColor = Color.Yellow;
+            if (textBox.BackColor == Color.Yellow)
+            {
+                textBox.BackColor = Color.White;
+            }
+            else
+            {
+                textBox.BackColor = Color.Yellow;
+            }
         }
 
-        private void TextboxLeaveColor(object sender, EventArgs e)
-        {
-            TextBox textBox = (TextBox)sender;
-            textBox.BackColor = Color.White;
-        }
+        //private void MouseEnterEvent(object sender, EventArgs e)
+        //{
+        //    TextBox textBox = (TextBox)sender;
+        //    textBox.BackColor = Color.Yellow;
+        //}
+
+        //private void MouseLeaveEvent(object sender, EventArgs e)
+        //{
+        //    TextBox textBox = (TextBox)sender;
+        //    textBox.BackColor = Color.White;
+        //}
     }
 }
