@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("FormApplicationHomework")]
+[assembly: AssemblyTitle("WindowsFormsAppPart5")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("FormApplicationHomework")]
+[assembly: AssemblyProduct("WindowsFormsAppPart5")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("4c00eb13-5e72-45d7-9f66-df3d80088cd6")]
+[assembly: Guid("4d98add5-8749-456d-acd0-1c7365fa42fe")]
 
 // Version information for an assembly consists of the following four values:
 //
