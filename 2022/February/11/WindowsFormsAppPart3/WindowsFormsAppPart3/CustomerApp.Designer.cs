@@ -45,6 +45,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.customerList = new System.Windows.Forms.ListBox();
             this.winNotification = new System.Windows.Forms.NotifyIcon(this.components);
+            this.showCustomers = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +60,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.showCustomers);
             this.groupBox1.Controls.Add(this.addCustomerBtn);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -190,6 +192,16 @@
             this.winNotification.Text = "notifyIcon1";
             this.winNotification.Visible = true;
             // 
+            // showCustomers
+            // 
+            this.showCustomers.Location = new System.Drawing.Point(99, 238);
+            this.showCustomers.Name = "showCustomers";
+            this.showCustomers.Size = new System.Drawing.Size(156, 40);
+            this.showCustomers.TabIndex = 3;
+            this.showCustomers.Text = "Müştəriləri göstər";
+            this.showCustomers.UseVisualStyleBackColor = true;
+            this.showCustomers.Click += new System.EventHandler(this.showCustomers_Click);
+            // 
             // CustomerApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -226,5 +238,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ListBox customerList;
         private System.Windows.Forms.NotifyIcon winNotification;
+        private System.Windows.Forms.Button showCustomers;
     }
 }

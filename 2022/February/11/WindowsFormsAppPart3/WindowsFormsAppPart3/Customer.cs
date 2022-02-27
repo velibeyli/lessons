@@ -13,7 +13,7 @@ namespace WindowsFormsAppPart3
 
         public override string ToString()
         {
-            return "Id: " + Id + " Ad:" + Name + " Soyad:" + Surname + " Ata adı:" + FatherName + " E-mail:" + Email + " Mobil nömrə:" + PhoneNumber;
+            return "Id: " + Id + "   Ad: " + Name + "   Soyad: " + Surname + "   Ata adı: " + FatherName + "   E-mail: " + Email + "   Mobil nömrə: " + PhoneNumber;
         }
     }
 }

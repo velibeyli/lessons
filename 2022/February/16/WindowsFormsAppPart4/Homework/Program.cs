@@ -16,6 +16,8 @@
              alınır). Növbəti oyunların birində əgər 40 saniyə rekordum qırılarsa onda ekrana "Rekord yeniləndi!" popup mesajı çıxacaq. Əgər rekord yenilənməzsə
              oyun bitəndə "Uduzdunuz!" mesajı çıxacaq. Oyun resetlənən zaman rekord dəyəri sıfırlanmayacaq sadəcə button'lar sıfırlanacaq.
              */
+
+
         }
     }
 }

@@ -13,7 +13,7 @@ namespace WindowsFormsAppPart5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GroupBoxForm());
+            Application.Run(new BookStockApp());
         }
     }
 }

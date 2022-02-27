@@ -66,5 +66,11 @@ namespace WindowsFormsAppPart3
         {
             customerList.DataSource = VirtualDatabase.Customers;
         }
+
+        private void showCustomers_Click(object sender, EventArgs e)
+        {
+            Customers customerList = new Customers();
+            customerList.ShowDialog();
+        }
     }
 }

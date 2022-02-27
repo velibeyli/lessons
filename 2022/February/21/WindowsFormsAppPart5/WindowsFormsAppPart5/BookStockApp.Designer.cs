@@ -162,7 +162,7 @@
             this.bookPicture.TabIndex = 0;
             this.bookPicture.TabStop = false;
             // 
-            // BookStoreApp
+            // BookStockApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -171,7 +171,7 @@
             this.Controls.Add(this.cmbBooks);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "BookStoreApp";
+            this.Name = "BookStockApp";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kitab Stok Proqramı";
             this.Load += new System.EventHandler(this.BookStoreApp_Load);
