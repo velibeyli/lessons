@@ -140,7 +140,7 @@ namespace EmployeeManagementSystem
                 using (StreamReader reader = new StreamReader(new FileStream(path, FileMode.Open)))
                 {
                     if((reader.BaseStream.Length / 1024) > 2000) //(kb deyerini almaq ucun 1024'e boluruk) (2000kb=2MB)
-                        MessageBox.Show("Max PDF size limit is 2MB!", "Image size limit exceeded", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        MessageBox.Show("Max PDF size limit is 2MB!", "Pdf size limit exceeded", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     else
                     {
                         var newFileName = GlobalSettings.WAITING_UPLOADS_PATH + DateTime.Now.Ticks + ".pdf";

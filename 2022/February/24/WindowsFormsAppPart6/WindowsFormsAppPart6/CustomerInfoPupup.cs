@@ -17,7 +17,6 @@ namespace WindowsFormsAppPart6
         private void closeBtn_Click(object sender, EventArgs e)
         {
             this.Close();
-            form.Close();
         }
 
         private void CustomerInfoPupup_Load(object sender, EventArgs e)
