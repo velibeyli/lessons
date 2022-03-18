@@ -111,7 +111,7 @@ namespace Linq
 
             #region Func Delegate
             //1. Lambda expression
-            var q1 = ds.Customers.Where(m => m.Email.StartsWith("A"));
+            var q1 = ds.Customers.Where(m => m.Email.ToLower().StartsWith("A"));
 
             //2. Standart Delegate with method
             bool StartsWithA(Customer m)
