@@ -65,6 +65,7 @@ namespace ProjectAsTurbo
             this.label_turbo_az.Size = new System.Drawing.Size(215, 42);
             this.label_turbo_az.TabIndex = 3;
             this.label_turbo_az.Text = "TURBO.AZ";
+            this.label_turbo_az.Click += new System.EventHandler(this.label_turbo_az_Click);
             // 
             // label1
             // 
@@ -115,6 +116,7 @@ namespace ProjectAsTurbo
             this.label3.Size = new System.Drawing.Size(208, 50);
             this.label3.TabIndex = 8;
             this.label3.Text = "Elan yerləşdir";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label_mainPage
             // 
@@ -145,9 +147,9 @@ namespace ProjectAsTurbo
             this.label_all_announcement.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label_all_announcement.Location = new System.Drawing.Point(367, 270);
             this.label_all_announcement.Name = "label_all_announcement";
-            this.label_all_announcement.Size = new System.Drawing.Size(159, 22);
+            this.label_all_announcement.Size = new System.Drawing.Size(147, 22);
             this.label_all_announcement.TabIndex = 11;
-            this.label_all_announcement.Text = "Bütün elanlar (     )";
+            this.label_all_announcement.Text = "Bütün elanlar (  )";
             // 
             // label_expired_annoucement
             // 
@@ -156,9 +158,9 @@ namespace ProjectAsTurbo
             this.label_expired_annoucement.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label_expired_annoucement.Location = new System.Drawing.Point(543, 270);
             this.label_expired_annoucement.Name = "label_expired_annoucement";
-            this.label_expired_annoucement.Size = new System.Drawing.Size(213, 22);
+            this.label_expired_annoucement.Size = new System.Drawing.Size(201, 22);
             this.label_expired_annoucement.TabIndex = 11;
-            this.label_expired_annoucement.Text = "Müddəti başa çatmış (     )";
+            this.label_expired_annoucement.Text = "Müddəti başa çatmış (  )";
             // 
             // label_pending_annoucement
             // 
@@ -167,9 +169,9 @@ namespace ProjectAsTurbo
             this.label_pending_annoucement.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label_pending_annoucement.Location = new System.Drawing.Point(762, 271);
             this.label_pending_annoucement.Name = "label_pending_annoucement";
-            this.label_pending_annoucement.Size = new System.Drawing.Size(177, 22);
+            this.label_pending_annoucement.Size = new System.Drawing.Size(165, 22);
             this.label_pending_annoucement.TabIndex = 11;
-            this.label_pending_annoucement.Text = "Gözləmədə olan (     )";
+            this.label_pending_annoucement.Text = "Gözləmədə olan (  )";
             // 
             // label_denied_annoucement
             // 
@@ -178,9 +180,9 @@ namespace ProjectAsTurbo
             this.label_denied_annoucement.ForeColor = System.Drawing.Color.DodgerBlue;
             this.label_denied_annoucement.Location = new System.Drawing.Point(958, 271);
             this.label_denied_annoucement.Name = "label_denied_annoucement";
-            this.label_denied_annoucement.Size = new System.Drawing.Size(164, 22);
+            this.label_denied_annoucement.Size = new System.Drawing.Size(152, 22);
             this.label_denied_annoucement.TabIndex = 11;
-            this.label_denied_annoucement.Text = "İmtina edilmiş (     )";
+            this.label_denied_annoucement.Text = "İmtina edilmiş (  )";
             // 
             // User
             // 

@@ -16,5 +16,12 @@ namespace ProjectAsTurbo
         {
             InitializeComponent();
         }
+
+        private void label_turbo_az_Click(object sender, EventArgs e)
+        {
+            WEB web = new WEB();
+            web.Show();
+            this.Close();
+        }
     }
 }

@@ -53,5 +53,12 @@ namespace ProjectAsTurbo
             mainPage.Show();
             this.Close();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            CreateAdvertisement advertisement = new CreateAdvertisement();
+            advertisement.Show();
+            this.Close();
+        }
     }
 }

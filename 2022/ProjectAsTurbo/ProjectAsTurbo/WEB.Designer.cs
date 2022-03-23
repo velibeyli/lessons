@@ -205,6 +205,7 @@ namespace ProjectAsTurbo
             this.label2.Size = new System.Drawing.Size(208, 49);
             this.label2.TabIndex = 7;
             this.label2.Text = "Elan yerləşdir";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pictureBox3
             // 

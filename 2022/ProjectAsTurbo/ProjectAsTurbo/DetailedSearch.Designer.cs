@@ -126,6 +126,7 @@ namespace ProjectAsTurbo
             this.label2.Size = new System.Drawing.Size(208, 49);
             this.label2.TabIndex = 27;
             this.label2.Text = "Elan yerləşdir";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label_autoshops
             // 
@@ -261,12 +262,12 @@ namespace ProjectAsTurbo
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Unicode MS", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.Location = new System.Drawing.Point(365, 158);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(186, 39);
+            this.label4.Size = new System.Drawing.Size(148, 23);
             this.label4.TabIndex = 45;
-            this.label4.Text = "Ətraflı axtarış";
+            this.label4.Text = "ƏTRAFLI AXTARIŞ";
             // 
             // label_brand
             // 

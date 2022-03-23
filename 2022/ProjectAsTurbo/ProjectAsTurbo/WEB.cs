@@ -52,5 +52,11 @@ namespace ProjectAsTurbo
             DetailedSearch search = new DetailedSearch();
             search.Show();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            CreateAdvertisement advertisement = new CreateAdvertisement();
+            advertisement.Show();
+        }
     }
 }

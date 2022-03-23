@@ -16,5 +16,19 @@ namespace ProjectAsTurbo
         {
             InitializeComponent();
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            CreateAdvertisement advertisement = new CreateAdvertisement();
+            advertisement.Show();
+            this.Close();
+        }
+
+        private void label_turbo_az_Click(object sender, EventArgs e)
+        {
+            WEB mainPage = new WEB();
+            mainPage.Show();
+            this.Close();
+        }
     }
 }
