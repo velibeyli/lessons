@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace ProjectAsTurbo.Enums
 {
-    public enum Transmission
+    public enum Currency
     {
-        Mexaniki,
-        Avtomatik,
-        Robot,
-        Variator
+        AZN,
+        USD,
+        EUR
     }
 }

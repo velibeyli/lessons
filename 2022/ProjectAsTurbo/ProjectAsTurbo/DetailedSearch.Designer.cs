@@ -97,6 +97,7 @@ namespace ProjectAsTurbo
             this.checkBox_sideCurtain = new System.Windows.Forms.CheckBox();
             this.checkBox_seatHeater = new System.Windows.Forms.CheckBox();
             this.button_showAdvertisement = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -105,13 +106,15 @@ namespace ProjectAsTurbo
             // 
             this.label_enter_site.AutoSize = true;
             this.label_enter_site.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label_enter_site.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label_enter_site.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_enter_site.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label_enter_site.Location = new System.Drawing.Point(1182, 11);
+            this.label_enter_site.Location = new System.Drawing.Point(1150, 13);
             this.label_enter_site.Name = "label_enter_site";
             this.label_enter_site.Size = new System.Drawing.Size(39, 18);
             this.label_enter_site.TabIndex = 44;
             this.label_enter_site.Text = "Giriş";
+            this.label_enter_site.Click += new System.EventHandler(this.label_enter_site_Click);
             // 
             // label2
             // 
@@ -521,10 +524,6 @@ namespace ProjectAsTurbo
             // 
             this.comboBox_currency.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox_currency.FormattingEnabled = true;
-            this.comboBox_currency.Items.AddRange(new object[] {
-            "AZN",
-            "USD",
-            "EUR"});
             this.comboBox_currency.Location = new System.Drawing.Point(438, 417);
             this.comboBox_currency.Name = "comboBox_currency";
             this.comboBox_currency.Size = new System.Drawing.Size(63, 28);
@@ -547,9 +546,9 @@ namespace ProjectAsTurbo
             this.label_engineVolume.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_engineVolume.Location = new System.Drawing.Point(792, 418);
             this.label_engineVolume.Name = "label_engineVolume";
-            this.label_engineVolume.Size = new System.Drawing.Size(154, 20);
+            this.label_engineVolume.Size = new System.Drawing.Size(145, 20);
             this.label_engineVolume.TabIndex = 46;
-            this.label_engineVolume.Text = "Mühərrik həcmi, sm3";
+            this.label_engineVolume.Text = "Mühərrik həcmi, sm";
             // 
             // label3
             // 
@@ -823,11 +822,22 @@ namespace ProjectAsTurbo
             this.button_showAdvertisement.Text = "Elanları göstər";
             this.button_showAdvertisement.UseVisualStyleBackColor = false;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(934, 416);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(13, 13);
+            this.label8.TabIndex = 53;
+            this.label8.Text = "3";
+            // 
             // DetailedSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1484, 761);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.button_showAdvertisement);
             this.Controls.Add(this.checkBox_barter);
             this.Controls.Add(this.checkBox_seatVentilation);
@@ -900,6 +910,7 @@ namespace ProjectAsTurbo
             this.Name = "DetailedSearch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ətraflı axtarış";
+            this.Load += new System.EventHandler(this.DetailedSearch_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -977,5 +988,6 @@ namespace ProjectAsTurbo
         private System.Windows.Forms.CheckBox checkBox_sideCurtain;
         private System.Windows.Forms.CheckBox checkBox_seatHeater;
         private System.Windows.Forms.Button button_showAdvertisement;
+        private System.Windows.Forms.Label label8;
     }
 }

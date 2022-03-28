@@ -11,11 +11,12 @@ namespace ProjectAsTurbo
     {
         public string Brand { get; set; }
         public string Model { get; set; }
-        public string BodyType { get; set; }
+        public BodyType BodyType { get; set; }
         public string Color { get; set; }
         public string City { get; set; }
-        public string FuelType { get; set; }
+        public FuelType FuelType { get; set; }
         public Transmission Transmission { get; set; }
+        public Transmitter Transmitter { get; set; }
         public int Mileage { get; set; }
         public DateTime Year { get; set; }
         public int Engine { get; set; }

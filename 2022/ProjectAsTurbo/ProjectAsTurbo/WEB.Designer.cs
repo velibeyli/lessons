@@ -41,7 +41,7 @@ namespace ProjectAsTurbo
             this.label_spare_parts = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.comboBox_marka = new System.Windows.Forms.ComboBox();
+            this.comboBox_all_brands = new System.Windows.Forms.ComboBox();
             this.comboBox_all_models = new System.Windows.Forms.ComboBox();
             this.label_price = new System.Windows.Forms.Label();
             this.label_prod_year = new System.Windows.Forms.Label();
@@ -52,7 +52,7 @@ namespace ProjectAsTurbo
             this.comboBox_max_year = new System.Windows.Forms.ComboBox();
             this.checkBox_kredit = new System.Windows.Forms.CheckBox();
             this.checkBox_barter = new System.Windows.Forms.CheckBox();
-            this.comboBox_all_cities = new System.Windows.Forms.ComboBox();
+            this.comboBox_allCities = new System.Windows.Forms.ComboBox();
             this.button_search = new System.Windows.Forms.Button();
             this.label_numberOfAnnouncement = new System.Windows.Forms.Label();
             this.button_detailedSearch = new System.Windows.Forms.Button();
@@ -216,16 +216,16 @@ namespace ProjectAsTurbo
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
             // 
-            // comboBox_marka
+            // comboBox_all_brands
             // 
-            this.comboBox_marka.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox_marka.ForeColor = System.Drawing.Color.Gray;
-            this.comboBox_marka.FormattingEnabled = true;
-            this.comboBox_marka.Location = new System.Drawing.Point(380, 172);
-            this.comboBox_marka.Name = "comboBox_marka";
-            this.comboBox_marka.Size = new System.Drawing.Size(149, 27);
-            this.comboBox_marka.TabIndex = 9;
-            this.comboBox_marka.Text = "Bütün markalar";
+            this.comboBox_all_brands.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox_all_brands.ForeColor = System.Drawing.Color.Gray;
+            this.comboBox_all_brands.FormattingEnabled = true;
+            this.comboBox_all_brands.Location = new System.Drawing.Point(380, 172);
+            this.comboBox_all_brands.Name = "comboBox_all_brands";
+            this.comboBox_all_brands.Size = new System.Drawing.Size(149, 27);
+            this.comboBox_all_brands.TabIndex = 9;
+            this.comboBox_all_brands.Text = "Bütün markalar";
             // 
             // comboBox_all_models
             // 
@@ -271,10 +271,6 @@ namespace ProjectAsTurbo
             this.comboBox_currency.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox_currency.ForeColor = System.Drawing.Color.Gray;
             this.comboBox_currency.FormattingEnabled = true;
-            this.comboBox_currency.Items.AddRange(new object[] {
-            "AZN",
-            "USD",
-            "EUR"});
             this.comboBox_currency.Location = new System.Drawing.Point(620, 172);
             this.comboBox_currency.Name = "comboBox_currency";
             this.comboBox_currency.Size = new System.Drawing.Size(57, 27);
@@ -308,7 +304,7 @@ namespace ProjectAsTurbo
             this.comboBox_min_year.FormattingEnabled = true;
             this.comboBox_min_year.Location = new System.Drawing.Point(652, 213);
             this.comboBox_min_year.Name = "comboBox_min_year";
-            this.comboBox_min_year.Size = new System.Drawing.Size(57, 27);
+            this.comboBox_min_year.Size = new System.Drawing.Size(64, 27);
             this.comboBox_min_year.TabIndex = 9;
             this.comboBox_min_year.Text = "min.";
             // 
@@ -317,7 +313,7 @@ namespace ProjectAsTurbo
             this.comboBox_max_year.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox_max_year.ForeColor = System.Drawing.Color.Gray;
             this.comboBox_max_year.FormattingEnabled = true;
-            this.comboBox_max_year.Location = new System.Drawing.Point(711, 213);
+            this.comboBox_max_year.Location = new System.Drawing.Point(719, 213);
             this.comboBox_max_year.Name = "comboBox_max_year";
             this.comboBox_max_year.Size = new System.Drawing.Size(69, 27);
             this.comboBox_max_year.TabIndex = 9;
@@ -355,20 +351,16 @@ namespace ProjectAsTurbo
             this.checkBox_barter.Text = "Barter";
             this.checkBox_barter.UseVisualStyleBackColor = false;
             // 
-            // comboBox_all_cities
+            // comboBox_allCities
             // 
-            this.comboBox_all_cities.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox_all_cities.ForeColor = System.Drawing.Color.Gray;
-            this.comboBox_all_cities.FormattingEnabled = true;
-            this.comboBox_all_cities.Items.AddRange(new object[] {
-            "AZN",
-            "USD",
-            "EUR"});
-            this.comboBox_all_cities.Location = new System.Drawing.Point(939, 173);
-            this.comboBox_all_cities.Name = "comboBox_all_cities";
-            this.comboBox_all_cities.Size = new System.Drawing.Size(150, 27);
-            this.comboBox_all_cities.TabIndex = 9;
-            this.comboBox_all_cities.Text = "Bütün şəhərlər";
+            this.comboBox_allCities.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox_allCities.ForeColor = System.Drawing.Color.Gray;
+            this.comboBox_allCities.FormattingEnabled = true;
+            this.comboBox_allCities.Location = new System.Drawing.Point(939, 173);
+            this.comboBox_allCities.Name = "comboBox_allCities";
+            this.comboBox_allCities.Size = new System.Drawing.Size(150, 27);
+            this.comboBox_allCities.TabIndex = 9;
+            this.comboBox_allCities.Text = "Bütün şəhərlər";
             // 
             // button_search
             // 
@@ -436,18 +428,21 @@ namespace ProjectAsTurbo
             // 
             this.label_enter_site.AutoSize = true;
             this.label_enter_site.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label_enter_site.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label_enter_site.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_enter_site.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label_enter_site.Location = new System.Drawing.Point(1182, 13);
+            this.label_enter_site.Location = new System.Drawing.Point(1150, 13);
             this.label_enter_site.Name = "label_enter_site";
             this.label_enter_site.Size = new System.Drawing.Size(39, 18);
             this.label_enter_site.TabIndex = 15;
             this.label_enter_site.Text = "Giriş";
+            this.label_enter_site.Click += new System.EventHandler(this.label_enter_site_Click);
             // 
             // WEB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1484, 761);
             this.Controls.Add(this.label_enter_site);
             this.Controls.Add(this.label_numberOfAnnouncement);
@@ -462,9 +457,9 @@ namespace ProjectAsTurbo
             this.Controls.Add(this.comboBox_all_models);
             this.Controls.Add(this.comboBox_max_year);
             this.Controls.Add(this.comboBox_min_year);
-            this.Controls.Add(this.comboBox_all_cities);
+            this.Controls.Add(this.comboBox_allCities);
             this.Controls.Add(this.comboBox_currency);
-            this.Controls.Add(this.comboBox_marka);
+            this.Controls.Add(this.comboBox_all_brands);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label_spare_parts);
@@ -478,10 +473,10 @@ namespace ProjectAsTurbo
             this.Controls.Add(this.label_turbo_az);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "WEB";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "WEB";
+            this.Load += new System.EventHandler(this.WEB_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -504,7 +499,7 @@ namespace ProjectAsTurbo
         private System.Windows.Forms.Label label_spare_parts;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.ComboBox comboBox_marka;
+        private System.Windows.Forms.ComboBox comboBox_all_brands;
         private System.Windows.Forms.ComboBox comboBox_all_models;
         private System.Windows.Forms.Label label_price;
         private System.Windows.Forms.Label label_prod_year;
@@ -515,7 +510,7 @@ namespace ProjectAsTurbo
         private System.Windows.Forms.ComboBox comboBox_max_year;
         private System.Windows.Forms.CheckBox checkBox_kredit;
         private System.Windows.Forms.CheckBox checkBox_barter;
-        private System.Windows.Forms.ComboBox comboBox_all_cities;
+        private System.Windows.Forms.ComboBox comboBox_allCities;
         private System.Windows.Forms.Button button_search;
         private System.Windows.Forms.Label label_numberOfAnnouncement;
         private System.Windows.Forms.Button button_detailedSearch;

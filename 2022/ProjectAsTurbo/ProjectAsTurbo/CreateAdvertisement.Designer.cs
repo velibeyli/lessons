@@ -51,16 +51,16 @@ namespace ProjectAsTurbo
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox_chooseBrand = new System.Windows.Forms.ComboBox();
+            this.comboBox_all_brands = new System.Windows.Forms.ComboBox();
             this.label_chooseFueltype = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox_chooseFuelType = new System.Windows.Forms.ComboBox();
+            this.comboBox_allFuelTypes = new System.Windows.Forms.ComboBox();
             this.label_model = new System.Windows.Forms.Label();
             this.label_transmitter = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox_ChooseModel = new System.Windows.Forms.ComboBox();
-            this.comboBox_transmitter = new System.Windows.Forms.ComboBox();
+            this.comboBox_all_models = new System.Windows.Forms.ComboBox();
+            this.comboBox_allTransmitter = new System.Windows.Forms.ComboBox();
             this.label_bodyType = new System.Windows.Forms.Label();
             this.label_mileage = new System.Windows.Forms.Label();
             this.label_transmission = new System.Windows.Forms.Label();
@@ -69,16 +69,16 @@ namespace ProjectAsTurbo
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.comboBox_chooseBodyType = new System.Windows.Forms.ComboBox();
-            this.comboBox_chooseTransmission = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox_allTypes = new System.Windows.Forms.ComboBox();
+            this.comboBox_allTransmission = new System.Windows.Forms.ComboBox();
+            this.comboBox_prodDate = new System.Windows.Forms.ComboBox();
             this.textBox_Mileage = new System.Windows.Forms.TextBox();
             this.radioButton_km = new System.Windows.Forms.RadioButton();
             this.radioButton_mil = new System.Windows.Forms.RadioButton();
             this.label_color = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.comboBox_chooseColor = new System.Windows.Forms.ComboBox();
+            this.comboBox_allColor = new System.Windows.Forms.ComboBox();
             this.comboBox_engineVolume = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -124,7 +124,7 @@ namespace ProjectAsTurbo
             this.textBox_firstname = new System.Windows.Forms.TextBox();
             this.label_city = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
-            this.comboBox_cities = new System.Windows.Forms.ComboBox();
+            this.comboBox_allCities = new System.Windows.Forms.ComboBox();
             this.label_phoneNumber = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.textBox_phoneNumber = new System.Windows.Forms.TextBox();
@@ -141,13 +141,15 @@ namespace ProjectAsTurbo
             // 
             this.label_enter_site.AutoSize = true;
             this.label_enter_site.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label_enter_site.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label_enter_site.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label_enter_site.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label_enter_site.Location = new System.Drawing.Point(1182, 11);
+            this.label_enter_site.Location = new System.Drawing.Point(1150, 13);
             this.label_enter_site.Name = "label_enter_site";
             this.label_enter_site.Size = new System.Drawing.Size(39, 18);
             this.label_enter_site.TabIndex = 44;
             this.label_enter_site.Text = "Giriş";
+            this.label_enter_site.Click += new System.EventHandler(this.label_enter_site_Click);
             // 
             // label2
             // 
@@ -393,15 +395,15 @@ namespace ProjectAsTurbo
             this.label11.TabIndex = 46;
             this.label11.Text = "*";
             // 
-            // comboBox_chooseBrand
+            // comboBox_all_brands
             // 
-            this.comboBox_chooseBrand.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox_chooseBrand.FormattingEnabled = true;
-            this.comboBox_chooseBrand.Location = new System.Drawing.Point(495, 261);
-            this.comboBox_chooseBrand.Name = "comboBox_chooseBrand";
-            this.comboBox_chooseBrand.Size = new System.Drawing.Size(253, 26);
-            this.comboBox_chooseBrand.TabIndex = 48;
-            this.comboBox_chooseBrand.Text = "Seçin";
+            this.comboBox_all_brands.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox_all_brands.FormattingEnabled = true;
+            this.comboBox_all_brands.Location = new System.Drawing.Point(495, 261);
+            this.comboBox_all_brands.Name = "comboBox_all_brands";
+            this.comboBox_all_brands.Size = new System.Drawing.Size(253, 26);
+            this.comboBox_all_brands.TabIndex = 48;
+            this.comboBox_all_brands.Text = "Seçin";
             // 
             // label_chooseFueltype
             // 
@@ -424,14 +426,14 @@ namespace ProjectAsTurbo
             this.label13.TabIndex = 46;
             this.label13.Text = "*";
             // 
-            // comboBox_chooseFuelType
+            // comboBox_allFuelTypes
             // 
-            this.comboBox_chooseFuelType.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox_chooseFuelType.FormattingEnabled = true;
-            this.comboBox_chooseFuelType.Location = new System.Drawing.Point(983, 261);
-            this.comboBox_chooseFuelType.Name = "comboBox_chooseFuelType";
-            this.comboBox_chooseFuelType.Size = new System.Drawing.Size(249, 26);
-            this.comboBox_chooseFuelType.TabIndex = 48;
+            this.comboBox_allFuelTypes.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox_allFuelTypes.FormattingEnabled = true;
+            this.comboBox_allFuelTypes.Location = new System.Drawing.Point(983, 261);
+            this.comboBox_allFuelTypes.Name = "comboBox_allFuelTypes";
+            this.comboBox_allFuelTypes.Size = new System.Drawing.Size(249, 26);
+            this.comboBox_allFuelTypes.TabIndex = 48;
             // 
             // label_model
             // 
@@ -475,24 +477,24 @@ namespace ProjectAsTurbo
             this.label16.TabIndex = 46;
             this.label16.Text = "*";
             // 
-            // comboBox_ChooseModel
+            // comboBox_all_models
             // 
-            this.comboBox_ChooseModel.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox_ChooseModel.FormattingEnabled = true;
-            this.comboBox_ChooseModel.Location = new System.Drawing.Point(495, 290);
-            this.comboBox_ChooseModel.Name = "comboBox_ChooseModel";
-            this.comboBox_ChooseModel.Size = new System.Drawing.Size(253, 26);
-            this.comboBox_ChooseModel.TabIndex = 48;
-            this.comboBox_ChooseModel.Text = "Seçin";
+            this.comboBox_all_models.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox_all_models.FormattingEnabled = true;
+            this.comboBox_all_models.Location = new System.Drawing.Point(495, 290);
+            this.comboBox_all_models.Name = "comboBox_all_models";
+            this.comboBox_all_models.Size = new System.Drawing.Size(253, 26);
+            this.comboBox_all_models.TabIndex = 48;
+            this.comboBox_all_models.Text = "Seçin";
             // 
-            // comboBox_transmitter
+            // comboBox_allTransmitter
             // 
-            this.comboBox_transmitter.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox_transmitter.FormattingEnabled = true;
-            this.comboBox_transmitter.Location = new System.Drawing.Point(983, 290);
-            this.comboBox_transmitter.Name = "comboBox_transmitter";
-            this.comboBox_transmitter.Size = new System.Drawing.Size(249, 26);
-            this.comboBox_transmitter.TabIndex = 48;
+            this.comboBox_allTransmitter.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox_allTransmitter.FormattingEnabled = true;
+            this.comboBox_allTransmitter.Location = new System.Drawing.Point(983, 290);
+            this.comboBox_allTransmitter.Name = "comboBox_allTransmitter";
+            this.comboBox_allTransmitter.Size = new System.Drawing.Size(249, 26);
+            this.comboBox_allTransmitter.TabIndex = 48;
             // 
             // label_bodyType
             // 
@@ -578,32 +580,32 @@ namespace ProjectAsTurbo
             this.label22.TabIndex = 46;
             this.label22.Text = "*";
             // 
-            // comboBox_chooseBodyType
+            // comboBox_allTypes
             // 
-            this.comboBox_chooseBodyType.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox_chooseBodyType.FormattingEnabled = true;
-            this.comboBox_chooseBodyType.Location = new System.Drawing.Point(495, 319);
-            this.comboBox_chooseBodyType.Name = "comboBox_chooseBodyType";
-            this.comboBox_chooseBodyType.Size = new System.Drawing.Size(253, 26);
-            this.comboBox_chooseBodyType.TabIndex = 48;
+            this.comboBox_allTypes.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox_allTypes.FormattingEnabled = true;
+            this.comboBox_allTypes.Location = new System.Drawing.Point(495, 319);
+            this.comboBox_allTypes.Name = "comboBox_allTypes";
+            this.comboBox_allTypes.Size = new System.Drawing.Size(253, 26);
+            this.comboBox_allTypes.TabIndex = 48;
             // 
-            // comboBox_chooseTransmission
+            // comboBox_allTransmission
             // 
-            this.comboBox_chooseTransmission.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox_chooseTransmission.FormattingEnabled = true;
-            this.comboBox_chooseTransmission.Location = new System.Drawing.Point(983, 319);
-            this.comboBox_chooseTransmission.Name = "comboBox_chooseTransmission";
-            this.comboBox_chooseTransmission.Size = new System.Drawing.Size(249, 26);
-            this.comboBox_chooseTransmission.TabIndex = 48;
+            this.comboBox_allTransmission.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox_allTransmission.FormattingEnabled = true;
+            this.comboBox_allTransmission.Location = new System.Drawing.Point(983, 319);
+            this.comboBox_allTransmission.Name = "comboBox_allTransmission";
+            this.comboBox_allTransmission.Size = new System.Drawing.Size(249, 26);
+            this.comboBox_allTransmission.TabIndex = 48;
             // 
-            // comboBox4
+            // comboBox_prodDate
             // 
-            this.comboBox4.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(983, 347);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(249, 26);
-            this.comboBox4.TabIndex = 48;
+            this.comboBox_prodDate.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox_prodDate.FormattingEnabled = true;
+            this.comboBox_prodDate.Location = new System.Drawing.Point(983, 347);
+            this.comboBox_prodDate.Name = "comboBox_prodDate";
+            this.comboBox_prodDate.Size = new System.Drawing.Size(249, 26);
+            this.comboBox_prodDate.TabIndex = 48;
             // 
             // textBox_Mileage
             // 
@@ -669,14 +671,14 @@ namespace ProjectAsTurbo
             this.label18.TabIndex = 46;
             this.label18.Text = "*";
             // 
-            // comboBox_chooseColor
+            // comboBox_allColor
             // 
-            this.comboBox_chooseColor.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox_chooseColor.FormattingEnabled = true;
-            this.comboBox_chooseColor.Location = new System.Drawing.Point(495, 378);
-            this.comboBox_chooseColor.Name = "comboBox_chooseColor";
-            this.comboBox_chooseColor.Size = new System.Drawing.Size(253, 26);
-            this.comboBox_chooseColor.TabIndex = 48;
+            this.comboBox_allColor.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox_allColor.FormattingEnabled = true;
+            this.comboBox_allColor.Location = new System.Drawing.Point(495, 378);
+            this.comboBox_allColor.Name = "comboBox_allColor";
+            this.comboBox_allColor.Size = new System.Drawing.Size(253, 26);
+            this.comboBox_allColor.TabIndex = 48;
             // 
             // comboBox_engineVolume
             // 
@@ -1135,14 +1137,14 @@ namespace ProjectAsTurbo
             this.label32.TabIndex = 46;
             this.label32.Text = "*";
             // 
-            // comboBox_cities
+            // comboBox_allCities
             // 
-            this.comboBox_cities.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.comboBox_cities.FormattingEnabled = true;
-            this.comboBox_cities.Location = new System.Drawing.Point(689, 914);
-            this.comboBox_cities.Name = "comboBox_cities";
-            this.comboBox_cities.Size = new System.Drawing.Size(174, 26);
-            this.comboBox_cities.TabIndex = 48;
+            this.comboBox_allCities.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox_allCities.FormattingEnabled = true;
+            this.comboBox_allCities.Location = new System.Drawing.Point(689, 914);
+            this.comboBox_allCities.Name = "comboBox_allCities";
+            this.comboBox_allCities.Size = new System.Drawing.Size(174, 26);
+            this.comboBox_allCities.TabIndex = 48;
             // 
             // label_phoneNumber
             // 
@@ -1189,6 +1191,7 @@ namespace ProjectAsTurbo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1484, 1061);
             this.Controls.Add(this.button_added);
             this.Controls.Add(this.pictureBox3);
@@ -1224,16 +1227,16 @@ namespace ProjectAsTurbo
             this.Controls.Add(this.textBox_firstname);
             this.Controls.Add(this.textBox_price);
             this.Controls.Add(this.textBox_Mileage);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox_transmitter);
+            this.Controls.Add(this.comboBox_prodDate);
+            this.Controls.Add(this.comboBox_allTransmitter);
             this.Controls.Add(this.comboBox_engineVolume);
-            this.Controls.Add(this.comboBox_chooseTransmission);
-            this.Controls.Add(this.comboBox_chooseFuelType);
-            this.Controls.Add(this.comboBox_ChooseModel);
-            this.Controls.Add(this.comboBox_cities);
-            this.Controls.Add(this.comboBox_chooseColor);
-            this.Controls.Add(this.comboBox_chooseBodyType);
-            this.Controls.Add(this.comboBox_chooseBrand);
+            this.Controls.Add(this.comboBox_allTransmission);
+            this.Controls.Add(this.comboBox_allFuelTypes);
+            this.Controls.Add(this.comboBox_all_models);
+            this.Controls.Add(this.comboBox_allCities);
+            this.Controls.Add(this.comboBox_allColor);
+            this.Controls.Add(this.comboBox_allTypes);
+            this.Controls.Add(this.comboBox_all_brands);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
@@ -1294,6 +1297,7 @@ namespace ProjectAsTurbo
             this.Name = "CreateAdvertisement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CreateAdvertisement";
+            this.Load += new System.EventHandler(this.CreateAdvertisement_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_photo1)).EndInit();
@@ -1329,16 +1333,16 @@ namespace ProjectAsTurbo
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBox_chooseBrand;
+        private System.Windows.Forms.ComboBox comboBox_all_brands;
         private System.Windows.Forms.Label label_chooseFueltype;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox_chooseFuelType;
+        private System.Windows.Forms.ComboBox comboBox_allFuelTypes;
         private System.Windows.Forms.Label label_model;
         private System.Windows.Forms.Label label_transmitter;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox_ChooseModel;
-        private System.Windows.Forms.ComboBox comboBox_transmitter;
+        private System.Windows.Forms.ComboBox comboBox_all_models;
+        private System.Windows.Forms.ComboBox comboBox_allTransmitter;
         private System.Windows.Forms.Label label_bodyType;
         private System.Windows.Forms.Label label_mileage;
         private System.Windows.Forms.Label label_transmission;
@@ -1347,16 +1351,16 @@ namespace ProjectAsTurbo
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.ComboBox comboBox_chooseBodyType;
-        private System.Windows.Forms.ComboBox comboBox_chooseTransmission;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox_allTypes;
+        private System.Windows.Forms.ComboBox comboBox_allTransmission;
+        private System.Windows.Forms.ComboBox comboBox_prodDate;
         private System.Windows.Forms.TextBox textBox_Mileage;
         private System.Windows.Forms.RadioButton radioButton_km;
         private System.Windows.Forms.RadioButton radioButton_mil;
         private System.Windows.Forms.Label label_color;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ComboBox comboBox_chooseColor;
+        private System.Windows.Forms.ComboBox comboBox_allColor;
         private System.Windows.Forms.ComboBox comboBox_engineVolume;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label14;
@@ -1402,7 +1406,7 @@ namespace ProjectAsTurbo
         private System.Windows.Forms.TextBox textBox_firstname;
         private System.Windows.Forms.Label label_city;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.ComboBox comboBox_cities;
+        private System.Windows.Forms.ComboBox comboBox_allCities;
         private System.Windows.Forms.Label label_phoneNumber;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.TextBox textBox_phoneNumber;

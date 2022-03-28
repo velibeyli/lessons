@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace ProjectAsTurbo.Enums
 {
-    public enum Transmission
+    public enum Transmitter
     {
-        Mexaniki,
-        Avtomatik,
-        Robot,
-        Variator
+        Arxa,
+        Ön,
+        Tam
     }
 }
