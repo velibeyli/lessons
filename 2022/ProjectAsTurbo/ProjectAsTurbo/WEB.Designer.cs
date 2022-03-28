@@ -106,6 +106,7 @@ namespace ProjectAsTurbo
             this.label_bina_az.Size = new System.Drawing.Size(209, 68);
             this.label_bina_az.TabIndex = 4;
             this.label_bina_az.Text = "BİNA.AZ";
+            this.label_bina_az.Click += new System.EventHandler(this.label_bina_az_Click);
             this.label_bina_az.MouseLeave += new System.EventHandler(this.label_bina_az_MouseLeave);
             this.label_bina_az.MouseHover += new System.EventHandler(this.label_bina_az_MouseHover);
             // 
@@ -122,6 +123,7 @@ namespace ProjectAsTurbo
             this.label_tap_az.Size = new System.Drawing.Size(195, 68);
             this.label_tap_az.TabIndex = 4;
             this.label_tap_az.Text = "TAP.AZ";
+            this.label_tap_az.Click += new System.EventHandler(this.label_tap_az_Click);
             this.label_tap_az.MouseLeave += new System.EventHandler(this.label_tap_az_MouseLeave);
             this.label_tap_az.MouseHover += new System.EventHandler(this.label_tap_az_MouseHover);
             // 
@@ -138,6 +140,7 @@ namespace ProjectAsTurbo
             this.label_boss_az.Size = new System.Drawing.Size(227, 68);
             this.label_boss_az.TabIndex = 4;
             this.label_boss_az.Text = "BOSS.AZ";
+            this.label_boss_az.Click += new System.EventHandler(this.label_boss_az_Click);
             this.label_boss_az.MouseLeave += new System.EventHandler(this.label_boss_az_MouseLeave);
             this.label_boss_az.MouseHover += new System.EventHandler(this.label_boss_az_MouseHover);
             // 

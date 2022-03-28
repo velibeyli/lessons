@@ -87,5 +87,50 @@ namespace ProjectAsTurbo
             }
             
         }
+
+        private void label_bina_az_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://bina.az");
+        }
+
+        private void label_tap_az_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://tap.az");
+        }
+
+        private void label_boss_az_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://boss.az");
+        }
+
+        private void label_bina_az_MouseHover(object sender, EventArgs e)
+        {
+            label_bina_az.BackColor = Color.LightSalmon;
+        }
+
+        private void label_bina_az_MouseLeave(object sender, EventArgs e)
+        {
+            label_bina_az.BackColor = Color.Gray;
+        }
+
+        private void label_tap_az_MouseHover(object sender, EventArgs e)
+        {
+            label_tap_az.BackColor = Color.OrangeRed;
+        }
+
+        private void label_tap_az_MouseLeave(object sender, EventArgs e)
+        {
+            label_tap_az.BackColor = Color.Gray;
+        }
+
+        private void label_boss_az_MouseHover(object sender, EventArgs e)
+        {
+            label_boss_az.BackColor = Color.Gold;
+        }
+
+        private void label_boss_az_MouseLeave(object sender, EventArgs e)
+        {
+            label_boss_az.BackColor = Color.Gray;
+        }
     }
 }

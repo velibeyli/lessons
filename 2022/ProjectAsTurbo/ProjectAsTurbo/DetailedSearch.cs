@@ -137,5 +137,20 @@ namespace ProjectAsTurbo
             }
             this.Close();
         }
+
+        private void label_bina_az_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://bina.az");
+        }
+
+        private void label_tap_az_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://tap.az");
+        }
+
+        private void label_boss_az_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://boss.az");
+        }
     }
 }

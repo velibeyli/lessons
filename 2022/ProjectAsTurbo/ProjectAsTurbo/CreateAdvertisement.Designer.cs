@@ -229,6 +229,9 @@ namespace ProjectAsTurbo
             this.label_boss_az.Size = new System.Drawing.Size(227, 68);
             this.label_boss_az.TabIndex = 22;
             this.label_boss_az.Text = "BOSS.AZ";
+            this.label_boss_az.Click += new System.EventHandler(this.label_boss_az_Click);
+            this.label_boss_az.MouseLeave += new System.EventHandler(this.label_boss_az_MouseLeave);
+            this.label_boss_az.MouseHover += new System.EventHandler(this.label_boss_az_MouseHover);
             // 
             // label_tap_az
             // 
@@ -243,6 +246,9 @@ namespace ProjectAsTurbo
             this.label_tap_az.Size = new System.Drawing.Size(195, 68);
             this.label_tap_az.TabIndex = 21;
             this.label_tap_az.Text = "TAP.AZ";
+            this.label_tap_az.Click += new System.EventHandler(this.label_tap_az_Click);
+            this.label_tap_az.MouseLeave += new System.EventHandler(this.label_tap_az_MouseLeave);
+            this.label_tap_az.MouseHover += new System.EventHandler(this.label_tap_az_MouseHover);
             // 
             // label_bina_az
             // 
@@ -257,6 +263,9 @@ namespace ProjectAsTurbo
             this.label_bina_az.Size = new System.Drawing.Size(209, 68);
             this.label_bina_az.TabIndex = 20;
             this.label_bina_az.Text = "BİNA.AZ";
+            this.label_bina_az.Click += new System.EventHandler(this.label_bina_az_Click);
+            this.label_bina_az.MouseLeave += new System.EventHandler(this.label_bina_az_MouseLeave);
+            this.label_bina_az.MouseHover += new System.EventHandler(this.label_bina_az_MouseHover);
             // 
             // label_selling_buying
             // 
@@ -434,6 +443,7 @@ namespace ProjectAsTurbo
             this.comboBox_allFuelTypes.Name = "comboBox_allFuelTypes";
             this.comboBox_allFuelTypes.Size = new System.Drawing.Size(249, 26);
             this.comboBox_allFuelTypes.TabIndex = 48;
+            this.comboBox_allFuelTypes.Text = "Seçin";
             // 
             // label_model
             // 
@@ -495,6 +505,7 @@ namespace ProjectAsTurbo
             this.comboBox_allTransmitter.Name = "comboBox_allTransmitter";
             this.comboBox_allTransmitter.Size = new System.Drawing.Size(249, 26);
             this.comboBox_allTransmitter.TabIndex = 48;
+            this.comboBox_allTransmitter.Text = "Seçin";
             // 
             // label_bodyType
             // 
@@ -588,6 +599,7 @@ namespace ProjectAsTurbo
             this.comboBox_allTypes.Name = "comboBox_allTypes";
             this.comboBox_allTypes.Size = new System.Drawing.Size(253, 26);
             this.comboBox_allTypes.TabIndex = 48;
+            this.comboBox_allTypes.Text = "Seçin";
             // 
             // comboBox_allTransmission
             // 
@@ -597,6 +609,7 @@ namespace ProjectAsTurbo
             this.comboBox_allTransmission.Name = "comboBox_allTransmission";
             this.comboBox_allTransmission.Size = new System.Drawing.Size(249, 26);
             this.comboBox_allTransmission.TabIndex = 48;
+            this.comboBox_allTransmission.Text = "Seçin";
             // 
             // comboBox_prodDate
             // 
@@ -606,6 +619,7 @@ namespace ProjectAsTurbo
             this.comboBox_prodDate.Name = "comboBox_prodDate";
             this.comboBox_prodDate.Size = new System.Drawing.Size(249, 26);
             this.comboBox_prodDate.TabIndex = 48;
+            this.comboBox_prodDate.Text = "Seçin";
             // 
             // textBox_Mileage
             // 
@@ -679,6 +693,7 @@ namespace ProjectAsTurbo
             this.comboBox_allColor.Name = "comboBox_allColor";
             this.comboBox_allColor.Size = new System.Drawing.Size(253, 26);
             this.comboBox_allColor.TabIndex = 48;
+            this.comboBox_allColor.Text = "Seçin";
             // 
             // comboBox_engineVolume
             // 
@@ -688,6 +703,7 @@ namespace ProjectAsTurbo
             this.comboBox_engineVolume.Name = "comboBox_engineVolume";
             this.comboBox_engineVolume.Size = new System.Drawing.Size(249, 26);
             this.comboBox_engineVolume.TabIndex = 48;
+            this.comboBox_engineVolume.Text = "Seçin";
             // 
             // label12
             // 
@@ -800,6 +816,7 @@ namespace ProjectAsTurbo
             this.textBox_horsePower.Name = "textBox_horsePower";
             this.textBox_horsePower.Size = new System.Drawing.Size(249, 27);
             this.textBox_horsePower.TabIndex = 49;
+            this.textBox_horsePower.Text = "0";
             // 
             // checkBox_credit
             // 
@@ -1145,6 +1162,7 @@ namespace ProjectAsTurbo
             this.comboBox_allCities.Name = "comboBox_allCities";
             this.comboBox_allCities.Size = new System.Drawing.Size(174, 26);
             this.comboBox_allCities.TabIndex = 48;
+            this.comboBox_allCities.Text = "Seçin";
             // 
             // label_phoneNumber
             // 
