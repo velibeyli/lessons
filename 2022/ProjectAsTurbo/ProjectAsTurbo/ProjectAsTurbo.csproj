@@ -65,6 +65,7 @@
     <Compile Include="CreateAdvertisement.Designer.cs">
       <DependentUpon>CreateAdvertisement.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseCarModels.cs" />
     <Compile Include="DetailedSearch.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -28,6 +28,8 @@ namespace ProjectAsTurbo
 
         private void CreateAdvertisement_Load(object sender, EventArgs e)
         {
+            panel_sparePartsDropD.Height = 50;
+
             VirtualDatabase db = new VirtualDatabase();
             foreach (var item in db.Brands)
             {
@@ -131,6 +133,48 @@ namespace ProjectAsTurbo
         private void label_boss_az_MouseLeave(object sender, EventArgs e)
         {
             label_boss_az.BackColor = Color.Gray;
+        }
+
+        private void label_spare_parts_Click(object sender, EventArgs e)
+        {
+            if (panel_sparePartsDropD.Height == 270)
+            {
+                panel_sparePartsDropD.Height = 50;
+            }
+            else
+            {
+                panel_sparePartsDropD.Height = 270;
+            }
+        }
+
+        private void label_all_announcement_MouseHover(object sender, EventArgs e)
+        {
+            label_all_announcement.BackColor = Color.Red;
+        }
+
+        private void label_all_announcement_MouseLeave(object sender, EventArgs e)
+        {
+            label_all_announcement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+        }
+
+        private void label_autoshops_MouseHover(object sender, EventArgs e)
+        {
+            label_autoshops.BackColor = Color.Red;
+        }
+
+        private void label_autoshops_MouseLeave(object sender, EventArgs e)
+        {
+            label_autoshops.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+        }
+
+        private void label_spare_parts_MouseHover(object sender, EventArgs e)
+        {
+            label_spare_parts.BackColor = Color.Red;
+        }
+
+        private void label_spare_parts_MouseLeave(object sender, EventArgs e)
+        {
+            label_spare_parts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
         }
     }
 }

@@ -63,6 +63,8 @@ namespace ProjectAsTurbo
 
         private void WEB_Load(object sender, EventArgs e)
         {
+            panel_sparePartsDropD.Height = 50;
+
             VirtualDatabase db = new VirtualDatabase();
             foreach (var item in db.Brands)
             {
@@ -117,6 +119,193 @@ namespace ProjectAsTurbo
         private void label_boss_az_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://boss.az");
+        }
+
+        private void label_spare_parts_Click(object sender, EventArgs e)
+        {
+            if (panel_sparePartsDropD.Height == 270)
+            {
+                panel_sparePartsDropD.Height = 50;
+            }
+            else
+            {
+                panel_sparePartsDropD.Height = 270;
+            }
+        }
+
+        private void label_all_announcement_MouseLeave(object sender, EventArgs e)
+        {
+            label_all_announcement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+        }
+
+        private void label_all_announcement_MouseHover(object sender, EventArgs e)
+        {
+            label_all_announcement.BackColor = Color.Red;
+        }
+
+        private void label_autoshops_MouseHover(object sender, EventArgs e)
+        {
+            label_autoshops.BackColor = Color.Red;
+        }
+
+        private void label_autoshops_MouseLeave(object sender, EventArgs e)
+        {
+            label_autoshops.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+        }
+
+        private void label_spare_parts_MouseHover(object sender, EventArgs e)
+        {
+            label_spare_parts.BackColor = Color.Red;
+        }
+
+        private void label_spare_parts_MouseLeave(object sender, EventArgs e)
+        {
+            label_spare_parts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+        }
+
+        private void comboBox_all_brands_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBox_all_models.Items.Clear();
+            if (comboBox_all_brands.SelectedItem == "Abarth")
+            {
+                foreach (var item in DatabaseCarModels.Abart)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "Acura")
+            {
+                foreach (var item in DatabaseCarModels.Acura)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "Alfa Romeo")
+            {
+                foreach (var item in DatabaseCarModels.AlfaRomeo)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "Aprilia")
+            {
+                foreach (var item in DatabaseCarModels.Aprilia)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "Arctic Cat")
+            {
+                foreach (var item in DatabaseCarModels.ArcticCat)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "Aston Martin")
+            {
+                foreach (var item in DatabaseCarModels.AstonMartin)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "ATV")
+            {
+                foreach (var item in DatabaseCarModels.ATV)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "Audi")
+            {
+                foreach (var item in DatabaseCarModels.Audi)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "Avia")
+            {
+                foreach (var item in DatabaseCarModels.Avia)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "Baic")
+            {
+                foreach (var item in DatabaseCarModels.Baic)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "Bajaj")
+            {
+                foreach (var item in DatabaseCarModels.Bajaj)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "Benelli")
+            {
+                foreach (var item in DatabaseCarModels.Benelli)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "Bentley")
+            {
+                foreach (var item in DatabaseCarModels.Bentley)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "Bestune")
+            {
+                foreach (var item in DatabaseCarModels.Bestune)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "BMW")
+            {
+                foreach (var item in DatabaseCarModels.BMW)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "BMW Alpina")
+            {
+                foreach (var item in DatabaseCarModels.BMWAlpina)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "Brilliance")
+            {
+                foreach (var item in DatabaseCarModels.Brilliance)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "Buick")
+            {
+                foreach (var item in DatabaseCarModels.Buick)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "BYD")
+            {
+                foreach (var item in DatabaseCarModels.BYD)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
+            if (comboBox_all_brands.SelectedItem == "Cadillac")
+            {
+                foreach (var item in DatabaseCarModels.Cadillac)
+                {
+                    comboBox_all_models.Items.Add(item);
+                }
+            }
         }
     }
 }

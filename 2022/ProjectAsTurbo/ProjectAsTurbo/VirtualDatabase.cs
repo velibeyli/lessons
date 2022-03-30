@@ -17,7 +17,6 @@ namespace ProjectAsTurbo
             "Alfa Romeo",
             "Aprilia",
             "Arctic Cat",
-            "Asia",
             "Aston Martin",
             "ATV",
             "Audi",

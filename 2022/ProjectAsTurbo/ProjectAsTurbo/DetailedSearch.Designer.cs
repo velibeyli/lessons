@@ -31,8 +31,6 @@ namespace ProjectAsTurbo
         {
             this.label_enter_site = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label_autoshops = new System.Windows.Forms.Label();
-            this.label_all_announcement = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label_boss_az = new System.Windows.Forms.Label();
             this.label_tap_az = new System.Windows.Forms.Label();
@@ -79,7 +77,6 @@ namespace ProjectAsTurbo
             this.comboBox_prodDateMax = new System.Windows.Forms.ComboBox();
             this.comboBox_engineMin = new System.Windows.Forms.ComboBox();
             this.comboBox_engineMax = new System.Windows.Forms.ComboBox();
-            this.label_spare_parts = new System.Windows.Forms.Label();
             this.checkBox_credit = new System.Windows.Forms.CheckBox();
             this.checkBox_barter = new System.Windows.Forms.CheckBox();
             this.label_carSupply = new System.Windows.Forms.Label();
@@ -98,8 +95,23 @@ namespace ProjectAsTurbo
             this.checkBox_seatHeater = new System.Windows.Forms.CheckBox();
             this.button_showAdvertisement = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.label_all_announcement = new System.Windows.Forms.Label();
+            this.label_autoshops = new System.Windows.Forms.Label();
+            this.label_aksesuarlar = new System.Windows.Forms.Label();
+            this.label_audio_video = new System.Windows.Forms.Label();
+            this.label_autoChemicals = new System.Windows.Forms.Label();
+            this.label_parts = new System.Windows.Forms.Label();
+            this.labe_GPS = new System.Windows.Forms.Label();
+            this.label_signs = new System.Windows.Forms.Label();
+            this.label_siqnalization = new System.Windows.Forms.Label();
+            this.label_videoregister = new System.Windows.Forms.Label();
+            this.label_wheels = new System.Windows.Forms.Label();
+            this.label_other = new System.Windows.Forms.Label();
+            this.panel_sparePartsDropD = new System.Windows.Forms.Panel();
+            this.label_spare_parts = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel_sparePartsDropD.SuspendLayout();
             this.SuspendLayout();
             // 
             // label_enter_site
@@ -130,32 +142,6 @@ namespace ProjectAsTurbo
             this.label2.TabIndex = 27;
             this.label2.Text = "Elan yerləşdir";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label_autoshops
-            // 
-            this.label_autoshops.AutoSize = true;
-            this.label_autoshops.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label_autoshops.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label_autoshops.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_autoshops.ForeColor = System.Drawing.Color.White;
-            this.label_autoshops.Location = new System.Drawing.Point(492, 120);
-            this.label_autoshops.Name = "label_autoshops";
-            this.label_autoshops.Size = new System.Drawing.Size(101, 18);
-            this.label_autoshops.TabIndex = 25;
-            this.label_autoshops.Text = "Avtosalonlar";
-            // 
-            // label_all_announcement
-            // 
-            this.label_all_announcement.AutoSize = true;
-            this.label_all_announcement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label_all_announcement.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label_all_announcement.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_all_announcement.ForeColor = System.Drawing.Color.White;
-            this.label_all_announcement.Location = new System.Drawing.Point(368, 120);
-            this.label_all_announcement.Name = "label_all_announcement";
-            this.label_all_announcement.Size = new System.Drawing.Size(106, 18);
-            this.label_all_announcement.TabIndex = 24;
-            this.label_all_announcement.Text = "Bütün elanlar";
             // 
             // label1
             // 
@@ -625,19 +611,6 @@ namespace ProjectAsTurbo
             this.comboBox_engineMax.Size = new System.Drawing.Size(73, 21);
             this.comboBox_engineMax.TabIndex = 50;
             // 
-            // label_spare_parts
-            // 
-            this.label_spare_parts.AutoSize = true;
-            this.label_spare_parts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label_spare_parts.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label_spare_parts.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_spare_parts.ForeColor = System.Drawing.Color.White;
-            this.label_spare_parts.Location = new System.Drawing.Point(613, 120);
-            this.label_spare_parts.Name = "label_spare_parts";
-            this.label_spare_parts.Size = new System.Drawing.Size(268, 18);
-            this.label_spare_parts.TabIndex = 26;
-            this.label_spare_parts.Text = "Ehtiyyat hissələri və akssessuarlar";
-            // 
             // checkBox_credit
             // 
             this.checkBox_credit.AutoSize = true;
@@ -834,12 +807,211 @@ namespace ProjectAsTurbo
             this.label8.TabIndex = 53;
             this.label8.Text = "3";
             // 
+            // label_all_announcement
+            // 
+            this.label_all_announcement.AutoSize = true;
+            this.label_all_announcement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label_all_announcement.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_all_announcement.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_all_announcement.ForeColor = System.Drawing.Color.White;
+            this.label_all_announcement.Location = new System.Drawing.Point(365, 108);
+            this.label_all_announcement.Name = "label_all_announcement";
+            this.label_all_announcement.Padding = new System.Windows.Forms.Padding(5, 13, 5, 15);
+            this.label_all_announcement.Size = new System.Drawing.Size(116, 46);
+            this.label_all_announcement.TabIndex = 24;
+            this.label_all_announcement.Text = "Bütün elanlar";
+            this.label_all_announcement.MouseLeave += new System.EventHandler(this.label_all_announcement_MouseLeave);
+            this.label_all_announcement.MouseHover += new System.EventHandler(this.label_all_announcement_MouseHover);
+            // 
+            // label_autoshops
+            // 
+            this.label_autoshops.AutoSize = true;
+            this.label_autoshops.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label_autoshops.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_autoshops.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_autoshops.ForeColor = System.Drawing.Color.White;
+            this.label_autoshops.Location = new System.Drawing.Point(489, 108);
+            this.label_autoshops.Name = "label_autoshops";
+            this.label_autoshops.Padding = new System.Windows.Forms.Padding(5, 13, 5, 15);
+            this.label_autoshops.Size = new System.Drawing.Size(111, 46);
+            this.label_autoshops.TabIndex = 25;
+            this.label_autoshops.Text = "Avtosalonlar";
+            this.label_autoshops.MouseLeave += new System.EventHandler(this.label_autoshops_MouseLeave);
+            this.label_autoshops.MouseHover += new System.EventHandler(this.label_autoshops_MouseHover);
+            // 
+            // label_aksesuarlar
+            // 
+            this.label_aksesuarlar.AutoSize = true;
+            this.label_aksesuarlar.BackColor = System.Drawing.SystemColors.Control;
+            this.label_aksesuarlar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_aksesuarlar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_aksesuarlar.ForeColor = System.Drawing.Color.Black;
+            this.label_aksesuarlar.Location = new System.Drawing.Point(0, 51);
+            this.label_aksesuarlar.Name = "label_aksesuarlar";
+            this.label_aksesuarlar.Size = new System.Drawing.Size(97, 18);
+            this.label_aksesuarlar.TabIndex = 70;
+            this.label_aksesuarlar.Text = "Aksesuarlar";
+            // 
+            // label_audio_video
+            // 
+            this.label_audio_video.AutoSize = true;
+            this.label_audio_video.BackColor = System.Drawing.SystemColors.Control;
+            this.label_audio_video.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_audio_video.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_audio_video.ForeColor = System.Drawing.Color.Black;
+            this.label_audio_video.Location = new System.Drawing.Point(0, 72);
+            this.label_audio_video.Name = "label_audio_video";
+            this.label_audio_video.Size = new System.Drawing.Size(175, 18);
+            this.label_audio_video.TabIndex = 71;
+            this.label_audio_video.Text = "Audio və video texnika";
+            // 
+            // label_autoChemicals
+            // 
+            this.label_autoChemicals.AutoSize = true;
+            this.label_autoChemicals.BackColor = System.Drawing.SystemColors.Control;
+            this.label_autoChemicals.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_autoChemicals.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_autoChemicals.ForeColor = System.Drawing.Color.Black;
+            this.label_autoChemicals.Location = new System.Drawing.Point(0, 93);
+            this.label_autoChemicals.Name = "label_autoChemicals";
+            this.label_autoChemicals.Size = new System.Drawing.Size(222, 18);
+            this.label_autoChemicals.TabIndex = 72;
+            this.label_autoChemicals.Text = "Avtokosmetika və avtokimya";
+            // 
+            // label_parts
+            // 
+            this.label_parts.AutoSize = true;
+            this.label_parts.BackColor = System.Drawing.SystemColors.Control;
+            this.label_parts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_parts.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_parts.ForeColor = System.Drawing.Color.Black;
+            this.label_parts.Location = new System.Drawing.Point(0, 114);
+            this.label_parts.Name = "label_parts";
+            this.label_parts.Size = new System.Drawing.Size(135, 18);
+            this.label_parts.TabIndex = 73;
+            this.label_parts.Text = "Ehtiyyat hissələri";
+            // 
+            // labe_GPS
+            // 
+            this.labe_GPS.AutoSize = true;
+            this.labe_GPS.BackColor = System.Drawing.SystemColors.Control;
+            this.labe_GPS.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.labe_GPS.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labe_GPS.ForeColor = System.Drawing.Color.Black;
+            this.labe_GPS.Location = new System.Drawing.Point(0, 135);
+            this.labe_GPS.Name = "labe_GPS";
+            this.labe_GPS.Size = new System.Drawing.Size(136, 18);
+            this.labe_GPS.TabIndex = 74;
+            this.labe_GPS.Text = "GPS naviqatorlar";
+            // 
+            // label_signs
+            // 
+            this.label_signs.AutoSize = true;
+            this.label_signs.BackColor = System.Drawing.SystemColors.Control;
+            this.label_signs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_signs.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_signs.ForeColor = System.Drawing.Color.Black;
+            this.label_signs.Location = new System.Drawing.Point(0, 156);
+            this.label_signs.Name = "label_signs";
+            this.label_signs.Size = new System.Drawing.Size(149, 18);
+            this.label_signs.TabIndex = 75;
+            this.label_signs.Text = "Qeydiyyat nişanları";
+            // 
+            // label_siqnalization
+            // 
+            this.label_siqnalization.AutoSize = true;
+            this.label_siqnalization.BackColor = System.Drawing.SystemColors.Control;
+            this.label_siqnalization.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_siqnalization.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_siqnalization.ForeColor = System.Drawing.Color.Black;
+            this.label_siqnalization.Location = new System.Drawing.Point(0, 177);
+            this.label_siqnalization.Name = "label_siqnalization";
+            this.label_siqnalization.Size = new System.Drawing.Size(106, 18);
+            this.label_siqnalization.TabIndex = 76;
+            this.label_siqnalization.Text = "Siqnalizasiya";
+            // 
+            // label_videoregister
+            // 
+            this.label_videoregister.AutoSize = true;
+            this.label_videoregister.BackColor = System.Drawing.SystemColors.Control;
+            this.label_videoregister.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_videoregister.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_videoregister.ForeColor = System.Drawing.Color.Black;
+            this.label_videoregister.Location = new System.Drawing.Point(0, 198);
+            this.label_videoregister.Name = "label_videoregister";
+            this.label_videoregister.Size = new System.Drawing.Size(151, 18);
+            this.label_videoregister.TabIndex = 77;
+            this.label_videoregister.Text = "Videoqeydiyyatçılar";
+            // 
+            // label_wheels
+            // 
+            this.label_wheels.AutoSize = true;
+            this.label_wheels.BackColor = System.Drawing.SystemColors.Control;
+            this.label_wheels.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_wheels.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_wheels.ForeColor = System.Drawing.Color.Black;
+            this.label_wheels.Location = new System.Drawing.Point(0, 219);
+            this.label_wheels.Name = "label_wheels";
+            this.label_wheels.Size = new System.Drawing.Size(190, 18);
+            this.label_wheels.TabIndex = 78;
+            this.label_wheels.Text = "Şinlər,disklər və təkərlər";
+            // 
+            // label_other
+            // 
+            this.label_other.AutoSize = true;
+            this.label_other.BackColor = System.Drawing.SystemColors.Control;
+            this.label_other.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_other.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_other.ForeColor = System.Drawing.Color.Black;
+            this.label_other.Location = new System.Drawing.Point(0, 240);
+            this.label_other.Name = "label_other";
+            this.label_other.Size = new System.Drawing.Size(48, 18);
+            this.label_other.TabIndex = 79;
+            this.label_other.Text = "Digər";
+            // 
+            // panel_sparePartsDropD
+            // 
+            this.panel_sparePartsDropD.Controls.Add(this.label_other);
+            this.panel_sparePartsDropD.Controls.Add(this.label_wheels);
+            this.panel_sparePartsDropD.Controls.Add(this.label_videoregister);
+            this.panel_sparePartsDropD.Controls.Add(this.label_siqnalization);
+            this.panel_sparePartsDropD.Controls.Add(this.label_signs);
+            this.panel_sparePartsDropD.Controls.Add(this.labe_GPS);
+            this.panel_sparePartsDropD.Controls.Add(this.label_parts);
+            this.panel_sparePartsDropD.Controls.Add(this.label_autoChemicals);
+            this.panel_sparePartsDropD.Controls.Add(this.label_audio_video);
+            this.panel_sparePartsDropD.Controls.Add(this.label_aksesuarlar);
+            this.panel_sparePartsDropD.Controls.Add(this.label_spare_parts);
+            this.panel_sparePartsDropD.Location = new System.Drawing.Point(600, 108);
+            this.panel_sparePartsDropD.Name = "panel_sparePartsDropD";
+            this.panel_sparePartsDropD.Size = new System.Drawing.Size(283, 49);
+            this.panel_sparePartsDropD.TabIndex = 70;
+            // 
+            // label_spare_parts
+            // 
+            this.label_spare_parts.AutoSize = true;
+            this.label_spare_parts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label_spare_parts.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_spare_parts.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label_spare_parts.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_spare_parts.ForeColor = System.Drawing.Color.White;
+            this.label_spare_parts.Location = new System.Drawing.Point(0, 0);
+            this.label_spare_parts.Name = "label_spare_parts";
+            this.label_spare_parts.Padding = new System.Windows.Forms.Padding(15, 13, 0, 16);
+            this.label_spare_parts.Size = new System.Drawing.Size(283, 47);
+            this.label_spare_parts.TabIndex = 26;
+            this.label_spare_parts.Text = "Ehtiyyat hissələri və akssessuarlar";
+            this.label_spare_parts.Click += new System.EventHandler(this.label_spare_parts_Click);
+            this.label_spare_parts.MouseLeave += new System.EventHandler(this.label_spare_parts_MouseLeave);
+            this.label_spare_parts.MouseHover += new System.EventHandler(this.label_spare_parts_MouseHover);
+            // 
             // DetailedSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1484, 761);
+            this.Controls.Add(this.panel_sparePartsDropD);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button_showAdvertisement);
             this.Controls.Add(this.checkBox_barter);
@@ -898,7 +1070,6 @@ namespace ProjectAsTurbo
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label_enter_site);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label_spare_parts);
             this.Controls.Add(this.label_autoshops);
             this.Controls.Add(this.label_all_announcement);
             this.Controls.Add(this.label1);
@@ -916,6 +1087,8 @@ namespace ProjectAsTurbo
             this.Load += new System.EventHandler(this.DetailedSearch_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel_sparePartsDropD.ResumeLayout(false);
+            this.panel_sparePartsDropD.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -925,8 +1098,6 @@ namespace ProjectAsTurbo
 
         private System.Windows.Forms.Label label_enter_site;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label_autoshops;
-        private System.Windows.Forms.Label label_all_announcement;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_boss_az;
         private System.Windows.Forms.Label label_tap_az;
@@ -973,7 +1144,6 @@ namespace ProjectAsTurbo
         private System.Windows.Forms.ComboBox comboBox_prodDateMax;
         private System.Windows.Forms.ComboBox comboBox_engineMin;
         private System.Windows.Forms.ComboBox comboBox_engineMax;
-        private System.Windows.Forms.Label label_spare_parts;
         private System.Windows.Forms.CheckBox checkBox_credit;
         private System.Windows.Forms.CheckBox checkBox_barter;
         private System.Windows.Forms.Label label_carSupply;
@@ -992,5 +1162,19 @@ namespace ProjectAsTurbo
         private System.Windows.Forms.CheckBox checkBox_seatHeater;
         private System.Windows.Forms.Button button_showAdvertisement;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label_all_announcement;
+        private System.Windows.Forms.Label label_autoshops;
+        private System.Windows.Forms.Label label_aksesuarlar;
+        private System.Windows.Forms.Label label_audio_video;
+        private System.Windows.Forms.Label label_autoChemicals;
+        private System.Windows.Forms.Label label_parts;
+        private System.Windows.Forms.Label labe_GPS;
+        private System.Windows.Forms.Label label_signs;
+        private System.Windows.Forms.Label label_siqnalization;
+        private System.Windows.Forms.Label label_videoregister;
+        private System.Windows.Forms.Label label_wheels;
+        private System.Windows.Forms.Label label_other;
+        private System.Windows.Forms.Panel panel_sparePartsDropD;
+        private System.Windows.Forms.Label label_spare_parts;
     }
 }
