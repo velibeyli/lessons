@@ -69,10 +69,28 @@ namespace ProjectAsTurbo
             this.label_audio_video = new System.Windows.Forms.Label();
             this.label_aksesuarlar = new System.Windows.Forms.Label();
             this.label_spare_parts = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
+            this.picture1 = new System.Windows.Forms.PictureBox();
+            this.picture2 = new System.Windows.Forms.PictureBox();
+            this.picture3 = new System.Windows.Forms.PictureBox();
+            this.picture4 = new System.Windows.Forms.PictureBox();
+            this.label_price1 = new System.Windows.Forms.Label();
+            this.label_markaModel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel_sparePartsDropD.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            this.flowLayoutPanel2.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
+            this.flowLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picture1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture4)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -164,7 +182,7 @@ namespace ProjectAsTurbo
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.Location = new System.Drawing.Point(616, 15);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(289, 16);
+            this.label1.Size = new System.Drawing.Size(288, 16);
             this.label1.TabIndex = 5;
             this.label1.Text = "Dəstək xidməti: (012) 599-08-01 ; (012) 505-77-55";
             // 
@@ -613,12 +631,104 @@ namespace ProjectAsTurbo
             this.label_spare_parts.MouseLeave += new System.EventHandler(this.label_spare_parts_MouseLeave);
             this.label_spare_parts.MouseHover += new System.EventHandler(this.label_spare_parts_MouseHover);
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.picture1);
+            this.flowLayoutPanel1.Controls.Add(this.label_price1);
+            this.flowLayoutPanel1.Controls.Add(this.label_markaModel);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(363, 266);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 214);
+            this.flowLayoutPanel1.TabIndex = 71;
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Controls.Add(this.picture2);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(586, 266);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(200, 198);
+            this.flowLayoutPanel2.TabIndex = 71;
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.Controls.Add(this.picture3);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(809, 266);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(200, 198);
+            this.flowLayoutPanel3.TabIndex = 71;
+            // 
+            // flowLayoutPanel4
+            // 
+            this.flowLayoutPanel4.Controls.Add(this.picture4);
+            this.flowLayoutPanel4.Location = new System.Drawing.Point(1032, 266);
+            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
+            this.flowLayoutPanel4.Size = new System.Drawing.Size(200, 198);
+            this.flowLayoutPanel4.TabIndex = 71;
+            // 
+            // picture1
+            // 
+            this.picture1.Location = new System.Drawing.Point(3, 3);
+            this.picture1.Name = "picture1";
+            this.picture1.Size = new System.Drawing.Size(194, 125);
+            this.picture1.TabIndex = 0;
+            this.picture1.TabStop = false;
+            // 
+            // picture2
+            // 
+            this.picture2.Location = new System.Drawing.Point(3, 3);
+            this.picture2.Name = "picture2";
+            this.picture2.Size = new System.Drawing.Size(194, 125);
+            this.picture2.TabIndex = 0;
+            this.picture2.TabStop = false;
+            // 
+            // picture3
+            // 
+            this.picture3.Location = new System.Drawing.Point(3, 3);
+            this.picture3.Name = "picture3";
+            this.picture3.Size = new System.Drawing.Size(194, 125);
+            this.picture3.TabIndex = 0;
+            this.picture3.TabStop = false;
+            // 
+            // picture4
+            // 
+            this.picture4.Location = new System.Drawing.Point(3, 3);
+            this.picture4.Name = "picture4";
+            this.picture4.Size = new System.Drawing.Size(194, 125);
+            this.picture4.TabIndex = 0;
+            this.picture4.TabStop = false;
+            // 
+            // label_price1
+            // 
+            this.label_price1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_price1.Location = new System.Drawing.Point(5, 131);
+            this.label_price1.Margin = new System.Windows.Forms.Padding(5, 0, 3, 0);
+            this.label_price1.Name = "label_price1";
+            this.label_price1.Size = new System.Drawing.Size(192, 23);
+            this.label_price1.TabIndex = 1;
+            this.label_price1.Text = "qiymet";
+            // 
+            // label_markaModel
+            // 
+            this.label_markaModel.AutoSize = true;
+            this.label_markaModel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_markaModel.Location = new System.Drawing.Point(5, 154);
+            this.label_markaModel.Margin = new System.Windows.Forms.Padding(5, 0, 3, 0);
+            this.label_markaModel.Name = "label_markaModel";
+            this.label_markaModel.Size = new System.Drawing.Size(113, 20);
+            this.label_markaModel.TabIndex = 2;
+            this.label_markaModel.Text = "marka + model";
+            // 
             // WEB
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1484, 761);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1364, 749);
+            this.Controls.Add(this.flowLayoutPanel4);
+            this.Controls.Add(this.flowLayoutPanel2);
+            this.Controls.Add(this.flowLayoutPanel3);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel_sparePartsDropD);
             this.Controls.Add(this.label_enter_site);
             this.Controls.Add(this.label_numberOfAnnouncement);
@@ -657,6 +767,15 @@ namespace ProjectAsTurbo
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel_sparePartsDropD.ResumeLayout(false);
             this.panel_sparePartsDropD.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
+            this.flowLayoutPanel2.ResumeLayout(false);
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picture1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -704,5 +823,15 @@ namespace ProjectAsTurbo
         private System.Windows.Forms.Label label_audio_video;
         private System.Windows.Forms.Label label_aksesuarlar;
         private System.Windows.Forms.Label label_spare_parts;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.PictureBox picture1;
+        private System.Windows.Forms.Label label_price1;
+        private System.Windows.Forms.Label label_markaModel;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.PictureBox picture2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.PictureBox picture3;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private System.Windows.Forms.PictureBox picture4;
     }
 }

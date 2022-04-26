@@ -59,7 +59,7 @@ namespace ProjectAsTurbo
             if (fileStream != null)
                 fileStream.Close();
 
-            string outboxSMSDetails = "\n" + passingNumber + " nin OTP kodu " + smsCode;
+            string outboxSMSDetails = passingNumber + " nin OTP kodu " + smsCode;
             File.AppendAllText(GlobalSettings.OutboxMessage_Path + fileName, outboxSMSDetails);
 
             WEB.passingUser = passingNumber.ToString();

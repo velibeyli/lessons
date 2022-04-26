@@ -79,7 +79,7 @@ namespace ProjectAsTurbo
             "Jonway",
             "KamAz",
             "KAvZ",
-            "kawasaki",
+            "Kawasaki",
             "Kayo",
             "Keeway",
             "Khazar",
@@ -177,5 +177,14 @@ namespace ProjectAsTurbo
             "Çəhrayı", "Narıncı", "Qızılı", "Sarı", "Yaşıl", "Mavi", "Göy", "Bənövşəyi", "Qəhvəyi"
         };
         //Colors end
+        public List<Car> Car = new List<Car>();
+        //public List<Car> GetCar(int count)
+        //{
+        //    for (int i = 0; i < count; i++)
+        //    {
+        //        Car car = new Car();
+        //        car.Photo = 
+        //    }
+        //}
     }
 }

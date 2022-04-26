@@ -235,7 +235,7 @@ namespace ProjectAsTurbo
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.label1.Location = new System.Drawing.Point(616, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(289, 16);
+            this.label1.Size = new System.Drawing.Size(288, 16);
             this.label1.TabIndex = 23;
             this.label1.Text = "Dəstək xidməti: (012) 599-08-01 ; (012) 505-77-55";
             // 
@@ -436,6 +436,7 @@ namespace ProjectAsTurbo
             this.comboBox_all_brands.Size = new System.Drawing.Size(253, 26);
             this.comboBox_all_brands.TabIndex = 48;
             this.comboBox_all_brands.Text = "Seçin";
+            this.comboBox_all_brands.SelectedIndexChanged += new System.EventHandler(this.comboBox_all_brands_SelectedIndexChanged);
             // 
             // label_chooseFueltype
             // 
@@ -1381,7 +1382,7 @@ namespace ProjectAsTurbo
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1484, 1061);
+            this.ClientSize = new System.Drawing.Size(1364, 749);
             this.Controls.Add(this.panel_sparePartsDropD);
             this.Controls.Add(this.button_added);
             this.Controls.Add(this.pictureBox3);

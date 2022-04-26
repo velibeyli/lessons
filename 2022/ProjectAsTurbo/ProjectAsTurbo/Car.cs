@@ -1,6 +1,7 @@
 ﻿using ProjectAsTurbo.Enums;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,11 +19,13 @@ namespace ProjectAsTurbo
         public Transmission Transmission { get; set; }
         public Transmitter Transmitter { get; set; }
         public int Mileage { get; set; }
-        public DateTime Year { get; set; }
-        public int Engine { get; set; }
+        public int Year { get; set; }
+        public DateTime CreateDate { get; set; }
+        public decimal Engine { get; set; }
         public decimal Price { get; set; }
         public bool isCredit { get; set; }
         public bool isBarter { get; set; }
+        public Image Photo { get; set; }
 
     }
 }
